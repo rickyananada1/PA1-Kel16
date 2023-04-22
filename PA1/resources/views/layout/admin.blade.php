@@ -63,7 +63,7 @@
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <!-- Navbar Search -->
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a
               class="nav-link"
               data-widget="navbar-search"
@@ -96,18 +96,18 @@
                 </div>
               </form>
             </div>
-          </li>
+          </li> --}}
 
           <!-- Messages Dropdown Menu -->
-          <li class="nav-item dropdown">
+          {{-- <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="far fa-comments"></i>
               <span class="badge badge-danger navbar-badge">3</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-              <a href="#" class="dropdown-item">
+              <a href="#" class="dropdown-item"> --}}
                 <!-- Message Start -->
-                <div class="media">
+                {{-- <div class="media">
                   <img
                     src="{{ asset('admin/dist/img/user1-128x128.jpg') }}"
                     alt="User Avatar"
@@ -125,13 +125,13 @@
                       <i class="far fa-clock mr-1"></i> 4 Hours Ago
                     </p>
                   </div>
-                </div>
+                </div> --}}
                 <!-- Message End -->
-              </a>
+              {{-- </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
+              <a href="#" class="dropdown-item"> --}}
                 <!-- Message Start -->
-                <div class="media">
+                {{-- <div class="media">
                   <img
                     src="{{ asset('admin/dist/img/user8-128x128.jpg') }}"
                     alt="User Avatar"
@@ -149,10 +149,10 @@
                       <i class="far fa-clock mr-1"></i> 4 Hours Ago
                     </p>
                   </div>
-                </div>
+                </div> --}}
                 <!-- Message End -->
-              </a>
-              <div class="dropdown-divider"></div>
+              {{-- </a> --}}
+              {{-- {{-- <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
@@ -173,22 +173,22 @@
                       <i class="far fa-clock mr-1"></i> 4 Hours Ago
                     </p>
                   </div>
-                </div>
+                </div> 
                 <!-- Message End -->
-              </a>
-              <div class="dropdown-divider"></div>
+              </a> --}}
+              {{-- <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item dropdown-footer"
                 >See All Messages</a
               >
-            </div>
-          </li>
+            </div> --}}
+          {{-- </li> --}}
           <!-- Notifications Dropdown Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#">
+          {{-- <li class="nav-item dropdown"> --}}
+            {{-- <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="far fa-bell"></i>
               <span class="badge badge-warning navbar-badge">15</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            </a> --}}
+            {{-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
               <span class="dropdown-item dropdown-header"
                 >15 Notifications</span
               >
@@ -211,9 +211,9 @@
               <a href="#" class="dropdown-item dropdown-footer"
                 >See All Notifications</a
               >
-            </div>
-          </li>
-          <li class="nav-item">
+            </div> --}}
+          {{-- </li> --}}
+          {{-- <li class="nav-item">
             <a class="nav-link" data- ="fullscreen" href="#" role="button">
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
@@ -228,7 +228,7 @@
             >
               <i class="fas fa-th-large"></i>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -243,7 +243,7 @@
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8"
           />
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
+          <span class="brand-text font-weight-light"> GPdI PORSEA</span>
         </a>
 
         <!-- Sidebar -->
@@ -332,6 +332,14 @@
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Data Jemaat
+                  </p> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/jadwalibadah" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Jadwal Ibadah
                   </p> 
                 </a>
               </li>
@@ -977,13 +985,13 @@
       <!-- Main Footer -->
       <footer class="main-footer">
         <strong
-          >Copyright &copy; 2014-2021
-          <a href="https://adminlte.io">AdminLTE.io</a>.</strong
+          >Gereja GPDI Porsea &copy; 2023
+         </strong
         >
-        All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
+        .
+        {{-- <div class="float-right d-none d-sm-inline-block">
           <b>Version</b> 3.2.0
-        </div>
+        </div> --}}
       </footer>
     </div>
     <!-- ./wrapper -->
