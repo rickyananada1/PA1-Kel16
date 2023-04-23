@@ -15,6 +15,10 @@ class CreateDonasisTable extends Migration
     {
         Schema::create('donasis', function (Blueprint $table) {
             $table->id();
+            $table->date('tanggal');
+            $table->string('jenis');
+            $table->string('nama');
+            $table->string('jumlah');
             $table->timestamps();
         });
     }

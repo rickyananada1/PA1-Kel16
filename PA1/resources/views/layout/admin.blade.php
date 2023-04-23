@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AdminLTE 3 | Dashboard 2</title>
+    <title>Halaman ADMIN GPDI PORSEA</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -24,6 +24,7 @@
     <link
       rel="stylesheet"
       href="{{ asset('admin/dist/css/adminlte.min.css') }}"
+      @stack('css')
     />
   </head>
   <body
@@ -340,6 +341,22 @@
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Jadwal Ibadah
+                  </p> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/keuangan" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Keuangan
+                  </p> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/donasi" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Donasi
                   </p> 
                 </a>
               </li>
@@ -1012,13 +1029,27 @@
     <script src="{{ asset('admin/plugins/raphael/raphael.min.js') }}"></script>
     <script src="{{ asset('admin/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
     <script src="{{ asset('admin/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
-    <!-- ChartJS -->
+    <!-- ChartJS -->  
     <script src="{{ asset('admin/plugins/chart.js/Chart.min.js') }}"></script>
 
     <!-- AdminLTE for demo purposes -->
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('admin/dist/js/pages/dashboard2.js') }}"></script>
     <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    @stack('scripts')
+    @stack('scriptss')
+    @stack('scriptsss')
+    @stack('scriptssss')
+    @stack('scriptsssss')
+    @stack('s')
+    @stack('d')
+    @stack('dd')
+    @stack('ddd')
+    @stack('ss')
+    @stack('sss')
+    @stack('scriptssssss')
+    
+    
     
   </body>
 </html>

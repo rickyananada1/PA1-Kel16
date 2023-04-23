@@ -56,7 +56,7 @@
                         <td>{{ $row->nama }}</td>
                         <td>{{ $row->jeniskelamin }}</td>
                         <td>{{ $row->alamat }}</td>
-                        <td>{{ $row->notelpon }}</td>
+                        <td>0{{ $row->notelpon }}</td>
                         <td>
                             <a href="/tampilkandata/{{ $row->id }}" class="btn btn-warning">Edit</a>
                             <a href="#" class="btn btn-danger delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
@@ -72,6 +72,9 @@
     </div>
 </div>
 </div>    
+
+@endsection
+@push('script')
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
 <script>
@@ -115,5 +118,5 @@
     }
   });
 </script>
-
-@endsection
+    
+@endpush

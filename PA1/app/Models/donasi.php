@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class donasi extends Model
 {
     use HasFactory;
+    //tidak membatasi file masuk ke database
+    protected $guarded = [];
+    protected $dates = ['tanggal'];
 }
