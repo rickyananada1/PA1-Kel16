@@ -5,6 +5,7 @@ use App\Http\Controllers\DatajemaatController;
 use App\Http\Controllers\JadwalibadahController;
 use App\Http\Controllers\KeuanganController;
 use App\Http\Controllers\DonasiController;
+use App\Http\Controllers\PhotoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,3 +54,7 @@ Route::get('/tampilkandonasi/{id}',[DonasiController::class ,'tampilkandonasi'])
 Route::post('/updatedonasi/{id}',[DonasiController::class ,'updatedonasi'])->name('updatedonasi');
 Route::get('/deletedonasi/{id}',[DonasiController::class ,'deletedonasi'])->name('deletedonasi');
 
+Route::get('/photo',[PhotoController::class ,'index'])->name('photo');
+Route::get('/tambahphoto',[PhotoController::class ,'tambahphoto'])->name('tambahphoto');
+Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->name('insertphoto');
+Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->name('deletephoto');
