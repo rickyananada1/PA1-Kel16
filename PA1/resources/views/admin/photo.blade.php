@@ -39,11 +39,10 @@
                         
                     <tr>
                         <th scope="row"><?= $i ?></th>
-                        <td><img src="{{ asset('storage/photo/'.$row->photo) }}" alt="photo"style="max-width: 60px;"></td>
+                        <td><img src="{{ asset('storage/photo/'.$row->photo) }}" alt="photo"style="max-width: 50px;"></td>
                         <td>{{ $row->nama }}</td>
                         <td>
                                 <a href="#" class="btn btn-danger delete" id="{{ $row->id }}">Delete</a>
-
                         </td>
 
                     </tr>
@@ -51,15 +50,10 @@
                 </tbody>
                 @endforeach
               </table>
-
         </div>
     </div>
-
 </div>
     
-
-
-  </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
@@ -86,4 +80,3 @@
                         })
                     })
                 </script>
-</html>

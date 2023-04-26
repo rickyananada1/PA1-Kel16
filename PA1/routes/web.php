@@ -22,7 +22,7 @@ Route::get('/welcome', function () {
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.dashboard');
 });
 
 Route::get('/datajemaat',[DatajemaatController::class ,'index'])->name('datajemaat');
@@ -58,3 +58,5 @@ Route::get('/photo',[PhotoController::class ,'index'])->name('photo');
 Route::get('/tambahphoto',[PhotoController::class ,'tambahphoto'])->name('tambahphoto');
 Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->name('insertphoto');
 Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->name('deletephoto');
+
+Route::get('/video',[VideoController::class ,'index'])->name('video');

@@ -259,7 +259,7 @@
               />
             </div>
             <div class="info">
-              <a href="#" class="d-block">Alexander Pierce</a>
+              <a href="#" class="d-block">ADMIN GPDI</a>
             </div>
           </div>
 
@@ -357,6 +357,14 @@
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Donasi
+                  </p> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/photo" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Photo
                   </p> 
                 </a>
               </li>
