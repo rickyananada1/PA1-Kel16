@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DatajemaatController;
 use App\Http\Controllers\JadwalibadahController;
@@ -16,14 +17,17 @@ use App\Http\Controllers\PhotoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/welcome', function () {
-    return view('layout.admin');
-});
-
 
 Route::get('/', function () {
-    return view('user.dashboard');
+    return view('welcome');
 });
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
 
 Route::get('/datajemaat',[DatajemaatController::class ,'index'])->name('datajemaat');
 Route::get('/tambahjemaat',[DatajemaatController::class ,'tambahjemaat'])->name('tambahjemaat');
@@ -58,5 +62,3 @@ Route::get('/photo',[PhotoController::class ,'index'])->name('photo');
 Route::get('/tambahphoto',[PhotoController::class ,'tambahphoto'])->name('tambahphoto');
 Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->name('insertphoto');
 Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->name('deletephoto');
-
-Route::get('/video',[VideoController::class ,'index'])->name('video');
