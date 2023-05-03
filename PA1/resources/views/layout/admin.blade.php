@@ -260,6 +260,7 @@
             </div>
             <div class="info">
               <a href="#" class="d-block">ADMIN GPDI</a>
+              <a href="{{ route('logout') }}" class="d-block">Logout</a>
             </div>
           </div>
 
@@ -320,7 +321,7 @@
                 </ul>
               </li> --}}
               <li class="nav-item">
-                <a href="/halamanadmin" class="nav-link">
+                <a href="/dashboard" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
                     Dashboard

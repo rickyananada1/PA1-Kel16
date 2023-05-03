@@ -39,4 +39,12 @@ class DatajemaatController extends Controller
         $data ->delete();
         return redirect()->route('datajemaat')->with('success','Data Berhasil dihapus'); 
     }
+    public function indexx(Request $request){
+        if($request->has('search')){
+            $data = datajemaat::where('nama','LIKE','%'.$request->search. '%')->paginate(10);
+        }else{
+            $data = datajemaat::paginate(10);
+        }
+        return view('user.datajemaat', compact('data'));
+    }
 }

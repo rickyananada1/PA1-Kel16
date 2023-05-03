@@ -34,5 +34,9 @@ class DonasiController extends Controller
         $data ->delete();
         return redirect()->route('donasi')->with('success','Data Berhasil dihapus'); 
     }
+    public function indexx(Request $request){
+        $data = donasi::all();
+        return view('user.donasi',compact('data'));
+    }
 
 }

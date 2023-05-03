@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +25,7 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <h3 class="fw-bold text-center">Sign in</h3>
-          <p class="mb-5 text-center">Sign in for admin</p>
+          <p class="mb-5 text-center">Login Hanya untuk admin</p>
           <?php if(isset($alert)) : ?>
             <div class="alert alert-danger" role="alert"><strong class="fw-bold">Password atau username tidak sesuai.</strong> coba masukkan lagi!</div>
           <?php endif; ?>
@@ -47,6 +45,7 @@
               <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
               <label class="form-check-label" for="form1Example3"> Remember password </label>
             </div>
+            <x-button >Kembali</x-button>
             <x-button class="ml-3">
                     {{ __('Log in') }}
                 </x-button>

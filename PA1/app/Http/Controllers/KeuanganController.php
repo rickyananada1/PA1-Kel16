@@ -32,5 +32,10 @@ class KeuanganController extends Controller
         $data->delete();
         return redirect()->route('keuangan')->with('success','Data berhasil di Hapus');
     }
+    
+    public function indexx(){
+        $data = keuangan::all();
+        return view('user.keuangan',compact('data'));
+    }
 
 }
