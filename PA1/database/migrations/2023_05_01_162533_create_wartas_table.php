@@ -15,6 +15,7 @@ class CreateWartasTable extends Migration
     {
         Schema::create('wartas', function (Blueprint $table) {
             $table->id();
+            $table->string('judul');
             $table->string('keterangan');
             $table->string('photo');
             $table->timestamps();

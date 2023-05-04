@@ -8,5 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class warta extends Model
 {
     use HasFactory;
-    protected $guarded = [];
+  //  protected $guarded = [];
+    protected $fillable =[
+        'judul',
+        'keterangan',
+        'photo'
+    ];
 }

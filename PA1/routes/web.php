@@ -78,3 +78,8 @@ Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->middleware(
 Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->middleware(['auth'])->name('deletephoto');
 
 Route::get('/wartajemaat',[WartaController::class ,'index'])->middleware(['auth'])->name('wartajemaat');
+Route::get('/tambahwarta',[WartaController::class ,'tambahwarta'])->middleware(['auth'])->name('tambahwarta');
+Route::post('/insertwarta',[WartaController::class ,'insertwarta'])->middleware(['auth'])->name('insertwarta');
+Route::get('/tampilkanwarta/{id}',[WartaController::class ,'tampilkanwarta'])->middleware(['auth'])->name('tampilkanwarta');
+Route::post('/updatewarta/{id}',[WartaController::class ,'updatewarta'])->middleware(['auth'])->name('updatewarta');
+
