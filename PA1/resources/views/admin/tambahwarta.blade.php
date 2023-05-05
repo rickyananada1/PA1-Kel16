@@ -1,0 +1,53 @@
+@extends('layout.admin')
+@section('content')
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0"></h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Warta</li>
+              <li class="breadcrumb-item active">Tambah Warta Jemaat</li>
+              
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+
+    <h1 class="text-center mt-4">Tambah Warta Jemaat</h1>
+    <div class="container">
+        <form method="POST" action="/insertwarta" enctype="multipart/form-data">
+            @csrf
+            <input type="hidden" name="photo_lama" value="">
+            <div class="form-group">
+                <label for="nama">Judul</label>
+                <input type="text" class="form-control" id="judul" name="judul" >
+            </div>
+                {{-- @error('judul')
+                  <span class="text-danger" > {{ $message }}</span>                    
+                @enderror --}}
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
+                <textarea class="form-control" name="keterangan" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="photo">Photo</label>
+              <input type="file" class="form-control" id="photo" name="photo" >
+            </div>
+            {{-- @error('photo')
+            <span class="text-danger" > {{ $message }}</span>                    
+            @enderror --}}
+            <button type="submit" class="btn btn-primary">Simpan</button>
+        </form>
+    </div>
+</div>
+
+    
+@endsection

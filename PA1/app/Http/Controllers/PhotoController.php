@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-
+use Illuminate\Support\Facades\Session;
 use App\Models\photo;
 
 class PhotoController extends Controller
@@ -54,6 +55,19 @@ class PhotoController extends Controller
     // Redirect ke halaman utama dengan pesan sukses
     return redirect()->route('photo')->with('success', 'Foto berhasil dihapus');
     }   
+    public function perform()
+    {
+        Session::flush();
+        
+        Auth::logout();
+
+        return redirect('login');
+    }
+
+    public function indexx(){
+        $data = photo::all();
+        return view('user.galeri',compact('data'));
+    } 
 
 }
 //     public function tampilkanphoto($id)

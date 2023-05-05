@@ -5,9 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class video extends Model
+class warta extends Model
 {
-    protected $table = "videos";
-    protected $fillable =['video'];
     use HasFactory;
+  //  protected $guarded = [];
+    protected $fillable =[
+        'judul',
+        'keterangan',
+        'photo'
+    ];
 }

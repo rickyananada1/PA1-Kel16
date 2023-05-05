@@ -36,4 +36,11 @@ class JadwalibadahController extends Controller
         $data->delete();
         return redirect()->route('jadwalibadah')->with('success','Data berhasil dihapus');
     }
+
+    public function indexx(){
+        $data= jadwalibadah::all();
+        return view('user.jadwalibadah',compact('data'));
+    }
+
+
 }

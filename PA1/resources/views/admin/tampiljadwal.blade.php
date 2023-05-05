@@ -43,7 +43,7 @@
             </div> 
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-              <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5"></textarea>
+              <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5">{{ $data->deskripsi }}</textarea>
             </div>
             
             <button type="submit" class="btn btn-primary">Submit</button>

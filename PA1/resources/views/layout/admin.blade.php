@@ -260,6 +260,7 @@
             </div>
             <div class="info">
               <a href="#" class="d-block">ADMIN GPDI</a>
+              <a href="{{ route('logout') }}" class="d-block">Logout</a>
             </div>
           </div>
 
@@ -320,7 +321,7 @@
                 </ul>
               </li> --}}
               <li class="nav-item">
-                <a href="/halamanadmin" class="nav-link">
+                <a href="/dashboard" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
                     Dashboard
@@ -368,6 +369,16 @@
                   </p> 
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/wartajemaat" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Warta Jemaat
+                  </p> 
+                </a>
+              </li>
+              
+             
               {{-- <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-copy"></i>
@@ -1023,6 +1034,7 @@
 
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
+
     <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap -->
     <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -1056,6 +1068,7 @@
     @stack('ss')
     @stack('sss')
     @stack('scriptssssss')
+    @stack('script')
     
     
     
