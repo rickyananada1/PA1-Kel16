@@ -94,7 +94,7 @@ class PhotoController extends Controller
             ]);
     
             return redirect()->route('photo')->with('success','Data berhasil dimasukkan');
-        }
+    }
         else{
             photo::find($id)->update([
                 'nama' => $request->nama,
