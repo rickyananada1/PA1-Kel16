@@ -38,6 +38,7 @@ Route::get('/datajemaatt',[DatajemaatController::class ,'indexx'])->name('dataje
 Route::get('/keuangann',[KeuanganController::class ,'indexx'])->name('keuangann');
 Route::get('/donasii',[DonasiController::class ,'indexx'])->name('donasii');
 Route::get('/photoo',[PhotoController::class ,'indexx'])->name('photoo');
+Route::get('/wartajemaatt',[WartaController::class ,'indexx'])->name('wartaa');
 
 
 
@@ -72,14 +73,18 @@ Route::get('/tampilkandonasi/{id}',[DonasiController::class ,'tampilkandonasi'])
 Route::post('/updatedonasi/{id}',[DonasiController::class ,'updatedonasi'])->middleware(['auth'])->name('updatedonasi');
 Route::get('/deletedonasi/{id}',[DonasiController::class ,'deletedonasi'])->middleware(['auth'])->name('deletedonasi');
 
-Route::get('/photo',[PhotoController::class ,'index'])->middleware(['auth'])->name('photo');
-Route::get('/tambahphoto',[PhotoController::class ,'tambahphoto'])->middleware(['auth'])->name('tambahphoto');
-Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->middleware(['auth'])->name('insertphoto');
-Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->middleware(['auth'])->name('deletephoto');
 
 Route::get('/wartajemaat',[WartaController::class ,'index'])->middleware(['auth'])->name('wartajemaat');
 Route::get('/tambahwarta',[WartaController::class ,'tambahwarta'])->middleware(['auth'])->name('tambahwarta');
 Route::post('/insertwarta',[WartaController::class ,'insertwarta'])->middleware(['auth'])->name('insertwarta');
 Route::get('/tampilkanwarta/{id}',[WartaController::class ,'tampilkanwarta'])->middleware(['auth'])->name('tampilkanwarta');
 Route::post('/updatewarta/{id}',[WartaController::class ,'updatewarta'])->middleware(['auth'])->name('updatewarta');
+Route::get('/deletewarta/{id}',[WartaController::class ,'deletewarta'])->middleware(['auth'])->name('deletewarta');
 
+
+Route::get('/photo',[PhotoController::class ,'index'])->middleware(['auth'])->name('photo');
+Route::get('/tambahphoto',[PhotoController::class ,'tambahphoto'])->middleware(['auth'])->name('tambahphoto');
+Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->middleware(['auth'])->name('insertphoto');
+Route::get('/tampilkanphoto/{id}',[PhotoController::class ,'tampilkanphoto'])->middleware(['auth'])->name('tampilkanphoto');
+Route::post('/updatephoto/{id}',[PhotoController::class ,'updatephoto'])->middleware(['auth'])->name('updatephoto');
+Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->middleware(['auth'])->name('deletephoto');

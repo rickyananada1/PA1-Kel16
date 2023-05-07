@@ -26,9 +26,6 @@
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
           <h3 class="fw-bold text-center">Sign in</h3>
           <p class="mb-5 text-center">Login Hanya untuk admin</p>
-          <?php if(isset($alert)) : ?>
-            <div class="alert alert-danger" role="alert"><strong class="fw-bold">Password atau username tidak sesuai.</strong> coba masukkan lagi!</div>
-          <?php endif; ?>
           <h5 class="fw-bold mb-4">Sign In Your Account</h5>
           <form method="POST" action="{{ route('login') }}">
             @csrf

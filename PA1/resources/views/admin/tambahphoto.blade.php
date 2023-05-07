@@ -26,12 +26,12 @@
         <form method="POST" action="/insertphoto" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label for="nama">Keterangan</label>
-                <input type="text" class="form-control" id="nama" name="nama" required>
-            </div>
+              <label for="nama">Keterangan</label>
+              <input type="text" class="form-control" id="wkwkw" name="nama" />
+          </div>
             <div class="form-group">
                 <label for="photo">Photo</label>
-                <input type="file" class="form-control" id="photo" name="photo" required>
+                <input type="file" class="form-control" id="wkws" name="photo" required>
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>

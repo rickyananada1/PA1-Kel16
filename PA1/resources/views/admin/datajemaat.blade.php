@@ -79,7 +79,7 @@
 <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
 <script>
   $('.delete').click(function(){
-    var id = $(this).attr('id');
+    // var id = $(this).attr('id');
     var nama = $(this).attr('nama');
     Swal.fire({
       title: 'Yakin?',

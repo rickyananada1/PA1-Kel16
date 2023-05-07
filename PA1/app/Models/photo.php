@@ -8,5 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class photo extends Model
 {
     use HasFactory;
-    protected $guarded = [];
+    protected $fillable =[
+        'nama',
+        'photo'
+    ];
 }

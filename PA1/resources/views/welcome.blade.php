@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <!-- dropdown tentang gereja -->
             <li class="nav-item dropdown">
@@ -108,7 +108,7 @@
               </div>
               <h1 class="mb-4">Mengikuti<span>TUHAN</span> dimanapun kamu berada</h1>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#" class="btn btn-primary py-2 px-4">Tentang Gereja</a> <a href="#" class="btn btn-primary btn-outline-primary py-2 px-4">Agenda Kegiatan</a></p>
+              <p> </p>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@
               </div>
               <h1 class="mb-4">Following <span>Jesus</span> wherever we are</h1>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#" class="btn btn-primary py-2 px-4">Tentang Kami</a> <a href="#" class="btn btn-primary btn-outline-primary py-2 px-4">Agenda Kegiatan</a></p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -133,26 +133,56 @@
 
       <div class="container">
         <div class="home_heading text-center">
-          <br><br>
           <span class="subheading">Sejarah dan Visi Misi Gereja</span>
-          <h2 >Tentang Gereja</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         </div>
+        <div class="section-heading">
+          <h2>Sejarah <em>Gereja</em></h2>
+          {{-- <p>Berikut adalah sejarah gereja GPDI Porsea</p> --}}
+        </div>
+        <section id="about" class="about">
+          <div class="container" data-aos="fade-up">
+            <div class="row position-relative">
+              <div class="col-lg-7 about-img" style="background-image: url(assets/img/slider/bg_1.jpg"></div>
+              <div class="col-lg-7">
+                <h2>GPDI PORSEA</h2>
+                <div class="our-story">
+                  <h4>Sejak 1977</h4>
+                  {{-- <h3>Our Story</h3> --}}
+                  <p>Pendiri gereja ini adalah Pdt. P.K Sitorus B.Th, yang sudah meninggal 22 Desember 2020, dan digantikan oleh anaknya Pdp. Nehemia Ebenezer Sitorus yang dilantik pada 26 Juni 2022. Awal mula gereja ini didirikan, di mulai dari perintisan GPdI di Pintu Pohan pada tahun 1972, kemudian mengembangkan pelayanan dengan merintis GPdI Porsea di Lumban datu di sebuah rumah kontrakan pada tahun 1977, selama mengontrak hanya terdiri dari 10 Keluarga dan tetap bergumul untuk memiliki tempat ibadah yang tetap,kaena jumlah jemaat semakin bertambah. 
+                    dan Tuhan menjawab, sehinggga pada tahun 1989 dibeli pertapakan di Lumban Datu No 102, dan dibangun gereja atas nama GPdI Porsea. Setelah beberapa tahun menjalani ibadah, maka mengalami pertambahan jemaat dan tida cukup untuk menapung jemaat. Maka, pada tahun 2017 dimulai untuk proses janji iman kepada jemaat untuk memperbesar gedung GPdI Porsea. Sampa  tahun 2023,  Gereja sudah berdiri dengan bangunan baru yang masih berproses dalam kelengkapan pembangunannya, khususnya bagian pemagaran yang masih dalam tahap pengumpulan dana.</p>
+                  {{-- <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commo</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+                  </ul> --}}
+                  <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in
+                    quo eveniet. Molestias in maxime doloremque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section-heading ">
+          <h2>Visi dan Misi <em>Gereja</em></h2>
+          {{-- <p>Berikut adalah Visi & Misi GPDI Porsea</p> --}}
+        </div>
+         <br><br>
+         
         <div class="container">
           <div class="row">
              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="message-box">
-                   <h2><small><b>Sejarah Gereja GPdI PORSEA</b></small></h2>
-                   Di Pepanthan Tempurung PA (Persekutuan Doa) dilaksanakan setiap Kamis di berbagai rumah jemaat secara bergantian.<br/><br/>
-                   Selain itu setiap Minggu selesai ibadah, kami ada kegiatan superbook yaitu kegiatan untuk anak sekolah minggu yaitu membuat kreasi dan menonton Film Superbook.              
-                </div>
+              <div class="message-box">
+                <h2><small><b>Visi Gereja</b></small></h2>
+                <p class="lead">GKpdiadalah Gereja yang berasal dari 2 gereja dewasa yang di “regrouping” pada tahun 1978.GKJ Tempurung-Gubug memiliki 5 Pepanthan yaitu pepanthan Gubug, Tempurung, Ringinkidul, Solowire, dan Dempet</p>
+                <p class="lead">Mayoritas warga adalah petani penggarap, buruh tani, tukang bangunan,sehingga banyak yang boro ke Semarang dan Jakarta. Seharihari, yang berdomisili di Gubug dan sekitarnya adalah orangorang tua dan anakanak (sampai SMA).</p>
+             </div>
                   <!-- end messagebox -->
               </div>
               <!-- end col -->
               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="message-box">
-                   <h2><small><b>Visi & Misi Gereja</b></small></h2>
-                   <p class="lead">GKJ Tempurung-Gubug adalah Gereja yang berasal dari 2 gereja dewasa (GKJ Tempurung dan GKJ Gubug) yang di “regrouping” pada tahun 1978.GKJ Tempurung-Gubug memiliki 5 Pepanthan yaitu pepanthan Gubug, Tempurung, Ringinkidul, Solowire, dan Dempet</p>
+                   <h2><small><b>Misi Gereja</b></small></h2>
+                   <p class="lead">GKpdiadalah Gereja yang berasal dari 2 gereja dewasa yang di “regrouping” pada tahun 1978.GKJ Tempurung-Gubug memiliki 5 Pepanthan yaitu pepanthan Gubug, Tempurung, Ringinkidul, Solowire, dan Dempet</p>
                    <p class="lead">Mayoritas warga adalah petani penggarap, buruh tani, tukang bangunan,sehingga banyak yang boro ke Semarang dan Jakarta. Seharihari, yang berdomisili di Gubug dan sekitarnya adalah orangorang tua dan anakanak (sampai SMA).</p>
                 </div>
                 <!-- end messagebox -->
@@ -162,16 +192,20 @@
             <!-- end row -->
       </div>
     </div>
-    
   </div>
-    
-    <div class="pendeta_home"id="2">
-      <div class="container">
-        <div class="home_heading text-center">
-          <span class="subheading">Pendeta</span>
-          <h2>Pendeta Kami</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        </div>
+
+
+
+
+  <div class="pendeta_home"id="2">
+    <div class="container">
+      <div class="home_heading text-center">
+        <span class="subheading">Pelayan Gereja</span>
+      </div>
+      <div class="section-heading">
+        <h2>Pelayan  <em>Gereja</em></h2>
+        <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use this layout for your business website.</p>
+      </div>
 
         <div class="row">
           <div class="col-md-2 col-lg-3 ftco-animate">
@@ -188,6 +222,127 @@
             </div>
           </div>
           <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div class="img-wrap d-flex align-items-stretch">
+                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
+              </div>
+              <div class="text d-flex align-items-center pt-3 text-center">
+                <div>
+                  <h3 class="mb-2">Rachel Parker</h3>
+                  <span class="position mb-4">Lead Pastor</span>
+                </div>
+              </div>
+            </div>
+          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
             <div class="staff">
               <div class="img-wrap d-flex align-items-stretch">
                 <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
@@ -248,7 +403,7 @@
                   <a href="#" class="py-1 d-block"><span class="fa fa-camera-retro mr-3"></span>Galeri</a>
                 </li>
                 <li>
-                  <a href="#" class="py-1 d-block"><span class="mdi mdi-human-male-female mr-3"></span>Jemaat</a>
+                  <a href="/datajemaatt" class="py-1 d-block"><span class="mdi mdi-human-male-female mr-3"></span>Jemaat</a>
                 </li>
               </ul>
             </div>
@@ -258,9 +413,9 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Agenda Kegiatan</h2>
               <div class="opening-hours">
-                <p>Saturday Prayer Meeting: <span class="mb-3">10:00 am to 11:30 am</span></p>
-                <p>Sunday Service: <span class="mb-3">8:30 am to 11:30 am</span></p>
-                <p>Monday Service: <span class="mb-3">8:30 am to 11:30 am</span></p>
+                <p>Minggu Pagi<span class="mb-3">10:00 am to 11:30 am</span></p>
+                <p>Minggu Siang <span class="mb-3">8:30 am to 11:30 am</span></p>
+                <p>Sabtu Sore<span class="mb-3">8:30 am to 11:30 am</span></p>
               </div>
             </div>
           </div>

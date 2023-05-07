@@ -1,25 +1,67 @@
 @extends('layout.user')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        @foreach ($data as $row)
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <div class="iya">
-            <img class="parto" src="" height="" />
-          </div>
-          <div class="caption">
-            <h3>{{ $row->name }}</h3>
-            <p class="text-justify">   Mie Gomak adalah makanan yang terkenal sebagai masakan khas suku Batak Toba dari Sumatra Utara. Masakan ini adalah masakan khas daerah sekitar Danau Toba, mulai dari Porsea, Balige, Laguboti, Tarutung, hingga
-              Tapanuli Selatan. Mie ini juga dapat ditemukan di berbagai daerah di Sumatra Utara, mulai dari Medan, Siantar, Parapat, Labuhan Batu, Sibolga, hingga Deli Serdang.</p>
-         
-            </div>
-          </div>
-        </div>
-        @endforeach
-    </div>
-
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+  <h1 class="display-6">Galery Jemaat</h1>
+  <p class="text-primary fs-5 mb-5">Berikut adalah Galery Jemaat</p>
 </div>
 
+{{-- <section id="constructions" class="constructions">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row">
+      
+      
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+            <div class="portfolio-content h-100">
+              <img src="{{ asset($row->photo) }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p>{{ $row->nama }}</p>
+                <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1"
+                data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                class="bi bi-zoom-in"></i></a>
+                <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+          </div>
+             --}}
+  
+          
+          
+          <section id="projects" class="projects">
+            <div class="container" data-aos="fade-up">
+              
+              
+              
+              
+              
+              <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                  @foreach ($data as $row)
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+                      <div class="portfolio-content h-100">
+                        <img src="{{ asset($row->photo) }}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4> {{ $row->nama }}</h4>
+                          {{-- <p>{{ $row->nama }}</p>   --}}
+                          <a href="assets/img/slider/bg_1.jpg" title="Remodeling 1"
+                          data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                          class="bi bi-zoom-in"></i></a>
+                          <a href="project-details.html" title="More Details" class="details-link"><i
+                            class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                        <br>
+                      </div><!-- End Projects Item -->
+                      
+                      @endforeach
+                  </div>
+                </div>
+              </section>
+              
 @endsection

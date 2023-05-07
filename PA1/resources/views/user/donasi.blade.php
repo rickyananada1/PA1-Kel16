@@ -2,13 +2,16 @@
 
 @section('content')
 <div class="container">
-
     <div class="row">
         @if ($message = Session::get('success'))
         <div class="alert alert-success" role="alert">
         {{  $message }}
         </div>  
-      @endif
+        @endif
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          <h1 class="display-6">Donasi Gereja</h1>
+          <p class="text-primary fs-5 mb-5">Berikut adalah data Donasi Gereja</p>
+        </div>
         <table class="table">
             <thead>
               <tr>

@@ -28,8 +28,11 @@
 </table>
 {{ $data->links() }} --}}
 <div class="container">
-    <h1 text-align-center >data hemaat</h1>
     <div class="row">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-6">Data Jemaat</h1>
+            <p class="text-primary fs-5 mb-5">Berikut Data Jemaat Gereja GPDI Porsea</p>
+          </div>
         <table class="table align-middle mb-0 bg-white">
             <thead class="bg-light">
                 <tr>

@@ -74,34 +74,50 @@ class WartaController extends Controller
 
         if($photo){
             
-                    $name_gen =hexdec(uniqid());
-                    $img_ext = strtolower($photo->getClientOriginalExtension());
-                    $img_name = $name_gen.'.'.$img_ext;
-                    $lokasi ='image/warta/';
-                    $image = $lokasi.$img_name;
-                    $photo->move($lokasi,$img_name);
+            $name_gen =hexdec(uniqid());
+            $img_ext = strtolower($photo->getClientOriginalExtension());
+            $img_name = $name_gen.'.'.$img_ext;
+            $lokasi ='image/warta/';
+            $image = $lokasi.$img_name;
+            $photo->move($lokasi,$img_name);
             
-                    unlink($photolama);
-                    warta::find($id)->update([
-                        'judul' =>  $request->judul,
-                        'keterangan' => $request->keterangan,
-                        'photo' => $image,
-                        'created_at' => Carbon::now()
-                    ]);
+            unlink($photolama);
+            warta::find($id)->update([
+            'judul' =>  $request->judul,
+            'keterangan' => $request->keterangan,
+           'photo' => $image,
+            'created_at' => Carbon::now()
+            ]);
             
-                    return redirect()->route('wartajemaat')->with('success','Data berhasil diupdate');
-
+            return redirect()->route('wartajemaat')->with('success','Data berhasil diupdate');
         }
         else{
-                    warta::find($id)->update([
-                        'judul' =>  $request->judul,
-                        'keterangan' => $request->keterangan,
-                        'created_at' => Carbon::now()
-                    ]);
-            
-                    return redirect()->route('wartajemaat')->with('success','Data berhasil diupdate');      
-                  }
+            warta::find($id)->update([
+           'judul' =>  $request->judul,
+            'keterangan' => $request->keterangan,
+            'created_at' => Carbon::now()
+        ]);
+         return redirect()->route('wartajemaat')->with('success','Data berhasil diupdate');      
+         }}
+
+
+    public function deletewarta($id){
+    
+        $photo = Warta::find($id);
+        $photolama = $photo->photo;
+        unlink($photolama);
+        Warta::find($id)->delete();
+        return redirect()->route('wartajemaat')->with('success','Data berhasil dihapus');
     }
  
+      
+    public function indexx()
+    {
+            $data = warta::latest()->paginate(6);
+            return view('user.wartajemaat',compact('data'));
+        
+    }
+
+
 
 }
