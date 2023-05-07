@@ -368,8 +368,8 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><span>Gereja</span> Pniel</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2 logo">Gereja <span>GPDI PORSEA</span></h2>
+              <p>"Kita bernyanyi di gereja, mengapa kita tidak bisa menari di sana?"<br> ~ George Bernard Shaw</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate">
                   <a href="#"><span class="mdi mdi-twitter"></span></a>
@@ -388,22 +388,22 @@
               <h2 class="ftco-heading-2">Quick Link</h2>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="py-1 d-block"><span class="mdi mdi-view-dashboard mr-3"></span>Home</a>
+                  <a href="/" class="py-1 d-block"><span class="mdi mdi-view-dashboard mr-3"></span>Home</a>
                 </li>
                 <li>
                   <a href="#" class="py-1 d-block"><span class="mdi mdi-church mr-3"></span>About</a>
                 </li>
                 <li>
-                  <a href="#" class="py-1 d-block"><span class="mdi mdi-newspaper mr-3"></span>Artikel</a>
+                  <a href="#" class="py-1 d-block"><span class="mdi mdi-newspaper mr-3"></span>Warta Jemaat</a>
                 </li>
                 <li>
-                  <a href="#" class="py-1 d-block"><span class="lnr lnr-calendar-full mr-3"></span>Agenda</a>
+                  <a href="/datajemaatt" class="py-1 d-block"><span class="mdi mdi-human-male-female mr-3"></span>Data Jemaat</a>
+                </li>
+                <li>
+                  <a href="#" class="py-1 d-block"><span class="lnr lnr-calendar-full mr-3"></span>Jadwal Ibadah</a>
                 </li>
                 <li>
                   <a href="#" class="py-1 d-block"><span class="fa fa-camera-retro mr-3"></span>Galeri</a>
-                </li>
-                <li>
-                  <a href="/datajemaatt" class="py-1 d-block"><span class="mdi mdi-human-male-female mr-3"></span>Jemaat</a>
                 </li>
               </ul>
             </div>
