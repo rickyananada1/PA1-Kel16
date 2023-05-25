@@ -9,6 +9,7 @@ use App\Http\Controllers\DonasiController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WartaController;
+use App\Models\datajemaat;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,13 +22,26 @@ use App\Http\Controllers\WartaController;
 */
 
 
-Route::get('/', function () {
+Route::get('/2', function () {
     return view('welcome');
 });
 
 
+Route::get('/', function () {
+    return view('welcome2');
+});
+
+
+
+
+// Route::get('/ayam', function () {
+//     return view('layout.admin');
+// });
+
+
 Route::get('/dashboard', function () {
-    return view('layout.admin');
+    $jumlahjemaat = datajemaat::count();
+    return view('admin.index',compact('jumlahjemaat'));
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/logout',[PhotoController::class,'perform'])->name('logout');
@@ -39,6 +53,8 @@ Route::get('/keuangann',[KeuanganController::class ,'indexx'])->name('keuangann'
 Route::get('/donasii',[DonasiController::class ,'indexx'])->name('donasii');
 Route::get('/photoo',[PhotoController::class ,'indexx'])->name('photoo');
 Route::get('/wartajemaatt',[WartaController::class ,'indexx'])->name('wartaa');
+Route::get('/wartadetails',[WartaController::class ,'wartadetails'])->name('wartadetails');
+
 
 
 
@@ -88,3 +104,9 @@ Route::post('/insertphoto',[PhotoController::class ,'insertphoto'])->middleware(
 Route::get('/tampilkanphoto/{id}',[PhotoController::class ,'tampilkanphoto'])->middleware(['auth'])->name('tampilkanphoto');
 Route::post('/updatephoto/{id}',[PhotoController::class ,'updatephoto'])->middleware(['auth'])->name('updatephoto');
 Route::get('/deletephoto/{id}',[PhotoController::class,'deletephoto'])->middleware(['auth'])->name('deletephoto');
+
+
+
+Route::get('/testadmin', function () {
+    return view('layout.admin2');
+});

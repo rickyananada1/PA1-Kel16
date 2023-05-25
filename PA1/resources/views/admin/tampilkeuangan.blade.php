@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 
 @section('content')
 <div class="content-wrapper">
@@ -51,8 +51,7 @@
                     </form>
                 </div>
             </div>
-        </div>
-        </div>
+    </div>
 </div>
 @endsection
 

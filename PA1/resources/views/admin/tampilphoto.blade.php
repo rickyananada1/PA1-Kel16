@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 
 @section('content')
 <div class="content-wrapper">
@@ -47,7 +47,6 @@
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
     </div>
-</div>    
 
 
 

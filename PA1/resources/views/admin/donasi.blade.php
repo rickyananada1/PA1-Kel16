@@ -1,5 +1,5 @@
-@extends('layout.admin')
-@section('content')
+@extends('layout.admin2')
+@section('content')       
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
@@ -11,7 +11,8 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Donasi</li>
+            <li class="breadcrumb-item active">Data Jemaat</li>
+            <li class="breadcrumb-item active">Tambah Data</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -51,13 +52,12 @@
                     <a href="/tampilkandonasi/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
                     <a href="#" class="btn btn-danger delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
                 </td>
-                </tr>
+                </tr>`
             </tbody>
             <?php $i++ ?>
         @endforeach
           </table>
     </div>
-</div>
 </div>
 @endsection
    

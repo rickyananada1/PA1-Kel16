@@ -1,8 +1,7 @@
-@extends('layout.admin')
+{{-- @extends('layout.admin') --}}
+@extends('layout.admin2')
 
 @section('content')
-<body>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -22,7 +21,8 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-  <h1 class="text-center mb-4">Tambah Data Jemaat</h1>
+  <h1 class="text-center mb-4"style="font-family: 'Josefin Sans', sans-serif;">Tambah Data Jemaat</h1>
+
   <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
@@ -34,7 +34,7 @@
                 <label for="exampleInputEmail1" class="form-label">Nama</label>
                 <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-              <div class="mb-3">
+              <div class="form-group">
                 <label for="exampleInputEmail1" class="form-label">Jenis Kelamin</label>
                 <select class="form-select form-select-lg mb-3" name="jeniskelamin" aria-label=".form-select-lg example">
                   <option selected>Pilih Jenis Kelamin </option>
@@ -50,17 +50,19 @@
                 <label for="exampleInputEmail1" class="form-label">No Telepon</label>
                 <input type="number" class="form-control" name="notelpon" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-
+              @error('notelpon')
+              <span class="text-danger" > {{ $message }}</span>                    
+            @enderror
+            <br>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
       </div>
       </div>
-  </div>
+    </div>
+  
 
-  </div>
-</body>
     
 @endsection
 @push('scriptssss')

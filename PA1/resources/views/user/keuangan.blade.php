@@ -1,12 +1,21 @@
 @extends('layout.user')
 
 @section('content')
-<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-  <h1 class="display-6">Keuangan Gereja</h1>
-  <p class="text-primary fs-5 mb-5">Berikut adalah data Keuangan gereja</p>
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
+<div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+<h2>Keuangan</h2>
+<ol>
+ <li><a href="/">Home</a></li>
+ <li><a href="/jadwalibadahh">Keuangan</a></li>
+
+</ol>
 </div>
-<div class="container">
-  <div class="row">
+</div>
+</div><!-- End Breadcrumbs -->
 
     <table class="table">
         <thead>
@@ -38,5 +47,6 @@
     </table>
   </div>
 </div>
+</main>
     
 @endsection

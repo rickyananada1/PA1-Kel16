@@ -1,14 +1,37 @@
 @extends('layout.user')
+@push('css')
+<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+@endpush
 
+@push('js')
+<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+<script>
+  $(document).ready( function () {
+    $('#y').DataTable();
+} );
+</script>
+@endpush
 @section('content') 
-<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-  <h1 class="display-6">Jadwal Ibadah</h1>
-  <p class="text-primary fs-5 mb-5">Berikut Jadwal ibadah gereja GPDI PORSEA</p>
-</div>
-<div class="container">
-  <div class="row">
 
-    <table class="table">
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+      <h2>Jadwal Ibadah</h2>
+      <ol>
+        <li><a href="/2">Home</a></li>
+        <li>Jadwal Ibadah</li>
+      </ol>
+    </div>
+  </div>
+  </div><!-- End Breadcrumbs -->
+
+</main>
+<br>l
+<div class="container">
+  <div class="row d-block">
+
+    <table class="table" id="y">
         <thead>
           <tr>
               <th scope="col">No</th>
@@ -32,6 +55,7 @@
             <?php $i++?>
   </div>
 </div>
+
       @endforeach
   
 @endsection

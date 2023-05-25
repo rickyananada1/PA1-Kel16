@@ -117,7 +117,7 @@ class PhotoController extends Controller
     }
 
     public function indexx(){
-        $data = photo::all();
+        $data = photo::latest()->paginate(9);
         return view('user.galeri',compact('data'));
     } 
 

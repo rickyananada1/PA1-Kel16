@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/eka.css" />
-    <link rel="stylesheet" href="assets/fonts/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="assets/fonts/linericon/style.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
-    <link rel="stylesheet" href="assets/fonts/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/baguetteBox.min.css" />
-    <link rel="stylesheet" href="assets/mdb.min.css" />
+    <link rel="stylesheet" href="assetsz/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assetsz/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assetsz/css/eka.css" />
+    <link rel="stylesheet" href="assetsz/fonts/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assetsz/fonts/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="assetsz/fonts/linericon/style.css" />
+    <link rel="stylesheet" href="assetsz/fonts/flaticon.css" />
+    <link rel="stylesheet" href="assetsz/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assetsz/css/baguetteBox.min.css" />
 
+      @stack('css')
     <title>GPdI PORSEA</title>
   </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Foldit&family=Kanit&family=Playfair+Display&family=Rubik+80s+Fade&family=Tilt+Prism&display=swap');
+  </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><i class="flaticon-bible font-weight-bold"></i> GPdI<span> PORSEA</span></a>
+        <a class="navbar-brand" href="/"><i class="flaticon-bible font-weight-bold"></i> GPdI<span> PORSEA</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,13 +56,13 @@
             <!-- TUTUP -->
             <!-- dropdown jadwal ibadah & event -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> Jadwal Ibadah & event </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> Jadwal Ibadah & Warta Jemaat</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
                   <a class="dropdown-item" href="/jadwalibadahh">Jadwal Ibadah</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="penjadwalan/pm_home.php">Event</a>
+                  <a class="dropdown-item" href="/wartajemaatt">Warta Jemaat</a>
                 </li>
               </ul>
             </li>
@@ -93,45 +96,43 @@
         </div>
       </div>
     </nav>
-
-    <div id="sliderHome" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#sliderHome" data-slide-to="0" class="active"></li>
-        <li data-target="#sliderHome" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url(assets/img/slider/bg_1.jpg)">
-          <div class="slider_item text-center">
-            <div class="text">
-              <div class="subheading">
-                <span>GEREJA GPdI Porsea</span>
+        <div id="sliderHome" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#sliderHome" data-slide-to="0" class="active"></li>
+            <li data-target="#sliderHome" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(assetsz/img/slider/bg_1.jpg)">
+              <div class="slider_item text-center">
+                <div class="text">
+                  <div class="subheading">
+                    <span>GEREJA GPdI Porsea</span>
+                  </div>
+                  <h1 class="mb-4">Mengikuti<span> TUHAN</span> dimanapun kamu berada</h1>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  <p> </p>
+                </div>
               </div>
-              <h1 class="mb-4">Mengikuti<span>TUHAN</span> dimanapun kamu berada</h1>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p> </p>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url(assets/img/slider/bg_2.jpg)">
-          <div class="slider_item text-center">
-            <div class="text">
-              <div class="subheading">
-                <span>GEREJA GPdI PORSEA</span>
+            <div class="carousel-item" style="background-image: url(assetsz/img/slider/bg_2.jpg)">
+              <div class="slider_item text-center">
+                <div class="text">
+                  <div class="subheading">
+                    <span>GEREJA GPdI PORSEA</span>
+                  </div>
+                  <h1 class="mb-4">Following <span>Jesus</span> wherever we are</h1>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  <p></p>
+                </div>
               </div>
-              <h1 class="mb-4">Following <span>Jesus</span> wherever we are</h1>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
     <div id="1">
       <br><br><br>
-
-      <div class="container">
+        <div class="container">
         <div class="home_heading text-center">
           <span class="subheading">Sejarah dan Visi Misi Gereja</span>
         </div>
@@ -142,9 +143,11 @@
         <section id="about" class="about">
           <div class="container" data-aos="fade-up">
             <div class="row position-relative">
-              <div class="col-lg-7 about-img" style="background-image: url(assets/img/slider/bg_1.jpg"></div>
+              <div class="col-lg-7 about-img" style="background-image: url(assetsz/img/slider/bg_1.jpg"></div>
               <div class="col-lg-7">
-                <h2>GPDI PORSEA</h2>
+                <h2>GPDI PORSEA
+                  <br>
+                </h2>
                 <div class="our-story">
                   <h4>Sejak 1977</h4>
                   {{-- <h3>Our Story</h3> --}}
@@ -162,208 +165,157 @@
             </div>
           </div>
         </section>
-        <div class="section-heading ">
-          <h2>Visi dan Misi <em>Gereja</em></h2>
-          {{-- <p>Berikut adalah Visi & Misi GPDI Porsea</p> --}}
-        </div>
-         <br><br>
-         
-        <div class="container">
-          <div class="row">
-             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-              <div class="message-box">
-                <h2><small><b>Visi Gereja</b></small></h2>
-                <p class="lead">GKpdiadalah Gereja yang berasal dari 2 gereja dewasa yang di “regrouping” pada tahun 1978.GKJ Tempurung-Gubug memiliki 5 Pepanthan yaitu pepanthan Gubug, Tempurung, Ringinkidul, Solowire, dan Dempet</p>
-                <p class="lead">Mayoritas warga adalah petani penggarap, buruh tani, tukang bangunan,sehingga banyak yang boro ke Semarang dan Jakarta. Seharihari, yang berdomisili di Gubug dan sekitarnya adalah orangorang tua dan anakanak (sampai SMA).</p>
-             </div>
-                  <!-- end messagebox -->
-              </div>
-              <!-- end col -->
-              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="message-box">
-                   <h2><small><b>Misi Gereja</b></small></h2>
-                   <p class="lead">GKpdiadalah Gereja yang berasal dari 2 gereja dewasa yang di “regrouping” pada tahun 1978.GKJ Tempurung-Gubug memiliki 5 Pepanthan yaitu pepanthan Gubug, Tempurung, Ringinkidul, Solowire, dan Dempet</p>
-                   <p class="lead">Mayoritas warga adalah petani penggarap, buruh tani, tukang bangunan,sehingga banyak yang boro ke Semarang dan Jakarta. Seharihari, yang berdomisili di Gubug dan sekitarnya adalah orangorang tua dan anakanak (sampai SMA).</p>
-                </div>
-                <!-- end messagebox -->
-              </div>
-              <!-- end col -->
-            </div>
-            <!-- end row -->
       </div>
-    </div>
   </div>
+     <!-- ======= Testimonials Section ======= -->
+     <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-heading">
+          <h2> Visi  <em>Gereja</em></h2>
+          {{-- <p>Berikut adalah sejarah gereja GPDI Porsea</p> --}}
+        </div>
 
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">         
+                <div class="testimonial-item">
+                  <h3>VISI GEREJA GPDI PORSEA</h3>
+                  {{-- <h4>Ceo &amp; Founder</h4> --}}
+                  {{-- <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div> --}}
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Menjadi Gereja yang Bertumbuh berakar dan berbuah menuju kedewasaan <br>Di Dalam Yesus Kristus
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+                <div class="testimonial-item">
+                  <h3 >MISI GEREJA GPDI PORSEA</h3>
+                  {{-- <h4>Ceo &amp; Founder</h4> --}}
+                  {{-- <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div> --}}
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Membimbing tiap jemaat untuk terus membina hubungan yang bersifat pribadi dengan Tuhan, agar semakin dewasa dalam kerohanian.
 
-
-  <div class="pendeta_home"id="2">
-    <div class="container">
-      <div class="home_heading text-center">
-        <span class="subheading">Pelayan Gereja</span>
+                    Menciptakan dan memelihara suasana yang dapat mendukung terjadinya persekutuan yang erat dalam jemaat/mempererat tali kasih persaudaraan yang rukun
+                    
+                    Menggali karunia jemaat, serta mendorong jemaat untuk menggunakan karunia tersebut untuk melakukan pekerjaan Tuhan.
+                    
+                    Membimbing jemaat agar dapat menjawab tantangan dari kehidupan sehari-hari yang dihadapi jemaat itu sendiri, maupun oleh lingkungan sekitarnya secara Kristiani, agar jemaat semakin kuat dalam iman yang tidak tergoncangkan oleh segala pengaruh-pengaruh
+                    
+                    Melatih jemaat agar dapat melakukan Amanat Agung (Matius 28:19) yaitu menjadi saksi yang diberkati untuk memberkati jiwa-jiwa yang hendak dimenangkan bagi Kristus
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+       
+            </div><!-- End testimonial item -->
+        </div>
       </div>
-      <div class="section-heading">
-        <h2>Pelayan  <em>Gereja</em></h2>
-        <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use this layout for your business website.</p>
-      </div>
-
-        <div class="row">
-          <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/pak.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Lloyd Wilson</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>     <div class="col-md-2 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(assets/img/staf/ibu.jpg)"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2">Rachel Parker</h3>
-                  <span class="position mb-4">Lead Pastor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-                     <!-- end service -->
-          </div>
-       </div>
-    </div>
-      
+    </section><!-- End Testimonials Section -->
+<br><br>
+      {{-- <!-- ======= pendeta Section ======= -->
+       <section id="pendeta" class="pendeta section-bg">
+        <div class="container-xxl ">
+         <div class="container" data-aos="fade-up">
   
-    <footer class="ftco-footer ftco-bg-dark ftco-section mt-3" id="4">
+          <div class="section-heading">
+            <h2> Pendeta <em>Gereja</em></h2>
+          </div>
+  
+          <div class="row gy-4">
+            <div class="col-lg-6 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="pendeta-member">
+                <div class="member-img">
+                  <img src="{{ asset('assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>INDAH CESIA</h4>
+                  <span>Patissier</span>
+                  <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                </div>
+              </div>
+            </div><!-- End pendeta Member -->
+  
+            <div class="col-lg-6 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="pendeta-member">
+                <div class="member-img">
+                  <img src="{{ asset('assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>INDAH CESIA</h4>
+                  <span>Patissier</span>
+                  <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                </div>
+              </div>
+            </div><!-- End pendeta Member -->
+            
+          </div>          
+        </div>
+      </div>
+    </section><!-- End pendeta Section -->
+        
+   --}}
+   {{-- <section class="page-section bg-light" id="team">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{{ asset('assets/img/team/team-1.jpg') }}" alt="..." />
+            <h4>Parveen Anand</h4>
+            <p class="text-muted">Lead Designer</p>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+            <h4>Diana Petersen</h4>
+            <p class="text-muted">Lead Marketer</p>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+      </div>
+    </div>
+  </section> --}}
+    <br>
+    <div class="pendeta_home"id="3">
+        <div class="section-heading">
+          <h2>Alamat<em>Gereja</em></h2>
+        <p>GPdI Porsea, Jl. Gereja Ulu Bius No.102, Parparean III, Kec. Porsea, Toba, Sumatera Utara 22384</p>
+        </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=gpdi porsea&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcuttemplate.org</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:600px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:600px;}.gmap_iframe {height:600px!important;}</style></div>
+    </div>
+    <footer class="ftco-footer ftco-bg-dark ftco-section mt-3" id="5">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
@@ -407,7 +359,8 @@
                 </li>
               </ul>
             </div>
-          </div>
+        </div>
+
 
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
@@ -425,11 +378,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/mdb.min.js"></script>
-    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assetsz/js/mdb.min.js"></script>
+    <script src="assetsz/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="assetsz/js/popper.min.js"></script>
+    <script src="assetsz/js/bootstrap.min.js"></script>
+    <script src="assetsz/js/baguetteBox.min.js"></script>
     <script>
       baguetteBox.run(".tz-gallery");
     </script>
@@ -448,6 +401,7 @@
           }
         }
       </script>
+      @stack('js')
   </body>
 </html>
 

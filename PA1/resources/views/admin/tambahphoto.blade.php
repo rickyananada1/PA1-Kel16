@@ -1,7 +1,10 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 
 @section('content')
-<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+
+           
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -12,9 +15,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Photo</li>
-              <li class="breadcrumb-item active">Tambah Photo</li>
-              
+              <li class="breadcrumb-item active">Data Jemaat</li>
+              <li class="breadcrumb-item active">Tambah Data</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -36,5 +38,4 @@
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
     </div>
-</div>
 @endsection
