@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -27,13 +27,14 @@
               </div>
               @endif
             <table class="table">
+            
               
               <thead>
                 <tr>
                   <th scope="col">No</th>
                   <th scope="col">Judul</th>
-                  <th scope="col">Keterangan</th>
                   <th scope="col">Photo</th>
+                  <th scope="col">Keterangan</th>
                   <th scope="col">Aksi</th>
                 </tr>
               </thead>
@@ -43,11 +44,12 @@
                 <tr>
                   <th scope="row"><?= $i ?> </th>
                   <td>{{ $row->judul }}</td>
-                  <td>{{ $row->keterangan }}</td>
-                  <td> <img src="{{ asset($row->photo) }}" style="width: 70px" height="40px" alt=""></td>
+                  <td> <a href="{{ $row->photo }}"> <img src="{{ asset($row->photo) }}"  style="width: 140px" height="120px"alt=""></a>
+                  <td >{{ $row->keterangan }}</td>
+                    <a href="{{ asset($row->photo) }}"></a></td>
                   <td>
-                    <a href="/tampilkanwarta/{{ $row->id }} " class="btn btn-warning">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <a href="/tampilkanwarta/{{ $row->id }} " class="btn btn-outline-warning waves-effect">Edit</a>
+                    <a href="#"   class="btn btn-outline-danger waves-effect delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
                   </td>
                 </tr>
                 <?php $i++ ?>
@@ -55,9 +57,9 @@
               </tbody>
             </table>
             {{ $data->links() }}
-          </div>
-        </div>
       </div>
+    </div>
+      
       
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -75,7 +77,7 @@
             confirmButtonText: 'Ya, hapus saja!'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            window.location="/deletephoto/"+id+""
+                            window.location="/deletewarta/"+id+""
                             Swal.fire(
                                 'Dihapus!',
                                 'Data sudah terhapus',

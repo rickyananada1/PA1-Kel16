@@ -1,5 +1,6 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 @section('content')
+       
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
@@ -11,14 +12,14 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Donasi</li>
-            <li class="breadcrumb-item active">Tambah Donasi</li>
-            
+            <li class="breadcrumb-item active">Data Jemaat</li>
+            <li class="breadcrumb-item active">Tambah Data</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
+
     <h1 class="text-center mt-4 ">Tambah Donasi</h1>
     <div class="container">
         <div class="row justify-content-center">
@@ -53,7 +54,6 @@
             </div>
         </div>    
     </div>
-</div>
       
 @endsection
 

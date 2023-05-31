@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 @section('content')
 
   <div class="content-wrapper">
@@ -50,14 +50,15 @@
           <td>{{ $row->deskripsi }}</td>
           
           <td>
-            <a href="/tampilkanjadwal/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
-            <a href="#" class="btn btn-danger delete" nama="{{ $row->namaibadah }}" id="{{ $row->id }}">Delete</a>
+            <a href="/tampilkanjadwal/{{ $row->id }}" type="button" class="btn btn-outline-warning waves-effect">Edit</a>
+            <a href="#" class="btn btn-outline-danger waves-effec delete" nama="{{ $row->namaibadah }}" id="{{ $row->id }}">Delete</a>
           </td>
         </tr>
         <?php $i++?>
       @endforeach
+      </tbody>
+  </table>
     </div>
-</div>
 </div>
 
 @endsection

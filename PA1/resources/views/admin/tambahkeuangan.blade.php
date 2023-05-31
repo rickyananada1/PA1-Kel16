@@ -1,25 +1,27 @@
-    @extends('layout.admin')
+    @extends('layout.admin2')
 
     @section('content')
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Data Jemaat</h1>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Keuangan</li>
-                            <li class="breadcrumb-item active">Tambah Keuangan</li>
-                        </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </div>
-        
+
+           
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0"></h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Data Jemaat</li>
+              <li class="breadcrumb-item active">Tambah Data</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+     
         <h1 class="text-center mb-4">Tambah data Keuangan</h1>
         <div class="container">
             <div class="row justify-content-center">
@@ -54,7 +56,6 @@
             </div>
         </div>
     </div>
-</div>
 
 @endsection
 

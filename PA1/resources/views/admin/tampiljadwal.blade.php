@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 @section('content')
 <body>
   <div class="content-wrapper">
@@ -52,7 +52,6 @@
       </div>
     </div>
   </div>
-</div>  
 
 </div>
 </body> 

@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 @section('content')
 <body>
   <div class="content-wrapper">
@@ -47,14 +47,17 @@
                 <label for="exampleInputEmail1" class="form-label">No Telepon</label>
                 <input type="number" class="form-control" name="notelpon" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $data->notelpon }}">
               </div>
+              @error('notelpon')
+              <span class="text-danger" > {{ $message }}</span>                    
+            @enderror
+            <br>
 
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
       </div>
-      </div>
-  </div>
+    </div>
   </div>
  
 </body>

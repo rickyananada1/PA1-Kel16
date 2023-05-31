@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 
 @section('content')
 <div class="content-wrapper">
@@ -19,7 +19,7 @@
         </div><!-- /.container-fluid -->
     </div>
 
-    <h1 class="text-center mt-4">Tambah Warta Jemaat</h1>
+    <h1 class="text-center mt-4">Edit Warta Jemaat</h1>
     <div class="container">
         <form method="POST" action="/updatewarta/{{ $data->id }}" enctype="multipart/form-data">
             @csrf
@@ -50,7 +50,6 @@
             @enderror --}}
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
-    </div>
 </div>    
 
 

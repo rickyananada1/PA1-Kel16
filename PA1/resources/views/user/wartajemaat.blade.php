@@ -1,0 +1,82 @@
+@extends('layout.user')
+
+@section('content')
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Warta Jemaat  </h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Warta Jemaat</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+    
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="row gy-4 posts-list">
+          @foreach ($data as $row) 
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{{ asset($row->photo)}}"class="img-fluid" alt="">
+                <span class="post-date">December 12</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">{{ $row->judul }}</h3>
+
+
+                <p>
+                  {{ $row->keterangan }}
+                </p>
+
+                <hr>
+
+                <a href="#" class="moredetails" ><span>Read More</span>
+                  <i class="bi bi-arrow-right" ></i>
+                </a>
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+          @endforeach
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+@endsection
+@push('warta')
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assetsz/js/jquery-3.4.1.slim.min.js"></script>
+<script>
+  function showmore(image,title,deskripsi) {
+   Swal.fire({
+    title: 'title',
+    text: 'deskripsi',
+    imageUrl: 'image',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+      });
+    }
+  document.addEventListener('DOMContentLoaded', function(){
+    const eyeButtons = document.querySelectorAll('')
+  })
+  
+
+  </script>
+  @endpush

@@ -1,14 +1,20 @@
 @extends('layout.user')
 
 @section('content')
-<div class="container">
+<main id="main">
 
-    <div class="row">
-        @if ($message = Session::get('success'))
-        <div class="alert alert-success" role="alert">
-        {{  $message }}
-        </div>  
-      @endif
+  <!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
+<div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+<h2>Donasi</h2>
+<ol>
+ <li><a href="/">Home</a></li>
+ <li><a href="/jadwalibadahh">Donasi</a></li>
+
+</ol>
+</div>
+</div>
+</div><!-- End Breadcrumbs -->
         <table class="table">
             <thead>
               <tr>
@@ -37,7 +43,8 @@
         @endforeach
           </table>
     </div>
+  </div>
 </div>
-</div>
+</main>
 
 @endsection

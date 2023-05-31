@@ -10,9 +10,9 @@ class DatajemaatController extends Controller
 {
     public function index(Request $request){
         if($request->has('search')){
-            $data = datajemaat::where('nama','LIKE','%'.$request->search. '%')->paginate(5);
+            $data = datajemaat::where('nama','LIKE','%'.$request->search. '%')->paginate(10);
         }else{
-            $data = datajemaat::paginate(5);
+            $data = datajemaat::paginate(10);
         }
         return view('admin.datajemaat', compact('data'));
     }
@@ -20,6 +20,14 @@ class DatajemaatController extends Controller
         return view('admin.tambahjemaat');
     }
     public function insertdata(Request $request){ 
+
+        $validated=$request->validate([
+            'notelpon' => 'required|max:13',
+        ],
+        [
+            'notelpon.max' => 'Nomor maximal 13 angka',
+        ]);
+
         //dd($request->all());
         datajemaat::create($request->all());
         return redirect()->route('datajemaat')->with('success','Data Berhasil ditambahkan'); 
@@ -30,6 +38,12 @@ class DatajemaatController extends Controller
         return view('admin.tampildata', compact('data'));
     }
     public function updatedata(Request $request,$id){
+        $validated=$request->validate([
+            'notelpon' => 'required|max:13',
+        ],
+        [
+            'notelpon.max' => 'Nomor maximal 13 angka',
+        ]);
         $data = datajemaat::find($id);
         $data ->update($request->all());
         return redirect()->route('datajemaat')->with('success','Data Berhasil diupdate'); 
