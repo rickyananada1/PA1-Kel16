@@ -17,6 +17,7 @@ class CreateWartasTable extends Migration
             $table->id();
             $table->string('judul');
             $table->string('keterangan');
+            $table->date('tanggal');
             $table->string('photo');
             $table->timestamps();
         });

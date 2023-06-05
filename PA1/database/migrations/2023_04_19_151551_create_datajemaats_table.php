@@ -18,9 +18,10 @@ class CreateDatajemaatsTable extends Migration
             $table->id();
             $table->string('nama');
             $table->enum('jeniskelamin',['Laki-laki','Perempuan']);
+            $table->enum('baptis',['Sudah Baptis','Belum Baptis']);
+            $table->string('tempat');
+            $table->date('tanggal');
             $table->string('alamat');
-            $table->string('tempattanggal');
-            $table->string('baptis');
             $table->biginteger('notelpon');
             $table->timestamps();
         });

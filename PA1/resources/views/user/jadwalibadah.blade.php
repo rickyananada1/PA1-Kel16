@@ -1,16 +1,7 @@
 @extends('layout.user')
-@push('css')
-<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
-@endpush
 
-@push('js')
-<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
-<script>
-  $(document).ready( function () {
-    $('#y').DataTable();
-} );
-</script>
-@endpush
+
+
 @section('content') 
 
 <main id="main">
@@ -26,19 +17,19 @@
   </div>
   </div><!-- End Breadcrumbs -->
 
-</main>
-<br>l
+<br><br>
 <div class="container">
   <div class="row d-block">
 
-    <table class="table" id="y">
+    <table class="table align-middle mb-0 bg-white" >
         <thead>
           <tr>
               <th scope="col">No</th>
               <th scope="col">Nama Ibadah</th>
               <th scope="col">Ayat Alkitab</th>
               <th scope="col">Tanggal</th>
-              <th scope="col">Deskripsi Ibadah</th>
+              <th scope="col">Pelayan Ibadah</th>
+              <th scope="col">Lokasi Ibadah</th>
             </tr>
           </thead>
           <tbody>
@@ -49,13 +40,17 @@
               <td>{{ $row->namaibadah }}</td>
               <td>{{ $row->ayatalkitab }}</td>
               <td>{{ $row->haritanggal->format('D d M Y') }}</td>
-              <td>{{ $row->deskripsi }}</td>
+              <td>{{ $row->pelayan }}</td>
+              <td>{{ $row->lokasiibadah }}</td>
           
             </tr>
             <?php $i++?>
+            @endforeach
+      </table>
+    </div>
   </div>
-</div>
+</main>
 
-      @endforeach
+
   
 @endsection

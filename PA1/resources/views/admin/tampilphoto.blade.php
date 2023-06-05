@@ -19,7 +19,7 @@
         </div><!-- /.container-fluid -->
     </div>
 
-    <h1 class="text-center mt-4">Tambah Galery</h1>
+    <h1 class="text-center mt-4">Edit Galery</h1>
     <div class="container">
         <form method="POST" action="/updatephoto/{{ $data->id }}" enctype="multipart/form-data">
             @csrf

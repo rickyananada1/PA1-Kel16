@@ -12,6 +12,7 @@ class warta extends Model
     protected $fillable =[
         'judul',
         'keterangan',
-        'photo'
+        'photo',
+        'tanggal',
     ];
 }

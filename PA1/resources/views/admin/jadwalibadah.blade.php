@@ -35,7 +35,8 @@
           <th scope="col">Nama Ibadah</th>
           <th scope="col">Ayat Alkitab</th>
           <th scope="col">Tanggal</th>
-          <th scope="col">Deskripsi Ibadah</th>
+          <th scope="col">Pelayan Ibadah</th>
+          <th scope="col">Lokasi Ibadah</th>
           <th scope="col">Aksi</th>
         </tr>
       </thead>
@@ -47,7 +48,9 @@
           <td>{{ $row->namaibadah }}</td>
           <td>{{ $row->ayatalkitab }}</td>
           <td>{{ $row->haritanggal->format('D d M Y') }}</td>
-          <td>{{ $row->deskripsi }}</td>
+          <td>{{ $row->pelayan }}</td>
+          <td>{{ $row->lokasiibadah }}</td>
+
           
           <td>
             <a href="/tampilkanjadwal/{{ $row->id }}" type="button" class="btn btn-outline-warning waves-effect">Edit</a>

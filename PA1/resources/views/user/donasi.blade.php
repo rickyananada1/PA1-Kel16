@@ -1,3 +1,14 @@
+@push('jss')
+<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+<script>
+  $(document).ready( function () {
+    $('#y').DataTable();
+} );
+</script>
+@endpush
+@push('csss')
+<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+@endpush
 @extends('layout.user')
 
 @section('content')
@@ -15,7 +26,9 @@
 </div>
 </div>
 </div><!-- End Breadcrumbs -->
-        <table class="table">
+<br><br>
+<div class="container">
+        <table class="table" id="y" >
             <thead>
               <tr>
                 <th scope="col">No</th>
@@ -44,6 +57,7 @@
           </table>
     </div>
   </div>
+</div>
 </div>
 </main>
 

@@ -22,6 +22,10 @@
 
     <link rel="stylesheet" href="assetsz/css/baguetteBox.min.css">
     @stack('css')
+    @stack('csss')
+    @stack('cssss')
+
+
     <title>GPdI PORSEA</title>
   </head>
   <style>
@@ -81,7 +85,64 @@
     </div>
   </header><!-- End Header -->
     @yield('content')
-
+    <footer class="ftco-footer ftco-bg-dark ftco-section mt-3" id="5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo">Gereja <span>GPDI PORSEA</span></h2>
+              <p>"Kita bernyanyi di gereja, mengapa kita tidak bisa menari di sana?"<br> ~ George Bernard Shaw</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate">
+                  <a href="#"><span class="mdi mdi-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="mdi mdi-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="mdi mdi-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Quick Link</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/" class="py-1 d-block"><span class="mdi mdi-view-dashboard mr-3"></span>Home</a>
+                </li>
+               
+                <li>
+                  <a href="/wartajemaatt" class="py-1 d-block"><span class="mdi mdi-newspaper mr-3"></span>Warta Jemaat</a>
+                </li>
+                <li>
+                  <a href="/datajemaatt" class="py-1 d-block"><span class="mdi mdi-human-male-female mr-3"></span>Data Jemaat</a>
+                </li>
+                <li>
+                  <a href="/jadwalibadahh" class="py-1 d-block"><span class="mdi mdi-calendar mr-3"></span>Jadwal Ibadah</a>
+                </li>
+                <li>
+                  <a href="/photoo" class="py-1 d-block"><span class="fa fa-camera-retro mr-3"></span>Galeri</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+  
+  
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Agenda Kegiatan</h2>
+              <div class="opening-hours">
+                <p>Minggu Pagi<span class="mb-3">10:00 am to 11:30 am</span></p>
+                <p>Minggu Siang <span class="mb-3">8:30 am to 11:30 am</span></p>
+                <p>Sabtu Sore<span class="mb-3">8:30 am to 11:30 am</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -106,6 +167,10 @@
         baguetteBox.run(".tz-gallery");
       </script>
     @stack('js')
+    @stack('jss')
+    @stack('jsss')
+
+
     @stack('warta')
     {{-- <script>
       // When the user scrolls down 20px from the top of the document, slide down the navbar

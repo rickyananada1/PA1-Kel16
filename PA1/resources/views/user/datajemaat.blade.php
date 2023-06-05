@@ -1,3 +1,14 @@
+@push('js')
+<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+<script>
+  $(document).ready( function () {
+    $('#y').DataTable();
+} );
+</script>
+@endpush
+@push('css')
+<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+@endpush
 @extends('layout.user')
 @section('content')
 
@@ -6,16 +17,19 @@
          <!-- ======= Breadcrumbs ======= -->
   <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
     <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-      <h2>Jadwal Ibadah</h2>
+      <h2>Data Jemaat</h2>
       <ol>
         <li><a href="/">Home</a></li>
-        <li><a href="/jadwalibadahh">Jadwal Ibadah</a></li>
+        <li>Data jemaat</li>
 
       </ol>
     </div>
   </div>
   </div><!-- End Breadcrumbs -->
-        <table class="table align-middle mb-0 bg-white">
+  <br><br>  
+  <div class="container">
+
+        <table class="table" id="y">
             <thead class="bg-light">
                 <tr>
                     <th scope="col">No</th>
@@ -23,6 +37,7 @@
                     <th scope="col">Jenis Kelamin</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">No Telepon</th>
+                    <th scope="col">Data Jemaat</th>
                     
                 </tr>
             </thead>
@@ -35,6 +50,7 @@
                     <td>{{ $row->jeniskelamin }}</td>
                     <td>{{ $row->alamat }}</td>
                     <td>0{{ $row->notelpon }}</td>
+                    <td>sadkakdsa </td>
                 </tr>
                 
             </tbody>
@@ -42,7 +58,9 @@
             <?php $nomor++ ?>   
           </table>
           {{ $data->links() }}
-        @endsection
+        </div>
+      </div>
+      
     </div>
-</div>
-</main>
+  </main>
+  @endsection

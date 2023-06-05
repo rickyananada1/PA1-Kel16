@@ -40,6 +40,16 @@
             @error('Keterangan')
             <span class="text-danger" > {{ $message }}</span>                    
           @enderror
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Hari & Tanggal</label>
+            <input type="date" class="form-control" name="tanggal" id="tanggal">
+          </div>
+          @error('tanggal')
+          <span class="text-danger" > {{ $message }}</span>                    
+        @enderror
+
+
             <div class="form-group">
               <label for="photo">Photo</label>
               <input type="file" class="form-control" id="photo" name="photo" >

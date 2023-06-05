@@ -36,10 +36,26 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1" class="form-label">Jenis Kelamin</label>
-                <select class="form-select form-select-lg mb-3" name="jeniskelamin" aria-label=".form-select-lg example">
+                <select class="form-control select2" name="jeniskelamin" aria-label=".form-select-lg example">
                   <option selected>Pilih Jenis Kelamin </option>
                   <option value="1">Laki-laki</option>
                   <option value="2">Perempuan</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tempat Lahir</label>
+                <input type="text" name="tempat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Tanggal Lahir</label>
+              <input type="date" class="form-control" name="tanggal" id="exampleInputPassword1">
+              </div> 
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Status Baptis</label>
+                <select class="form-control select2" name="baptis" style="width: 100%;">
+                  <option selected>Pilih Status Baptis</option>
+                  <option value="1">Sudah Baptis</option>
+                  <option value="2">Belum Baptis</option>
                 </select>
               </div>
               <div class="mb-3">
@@ -66,7 +82,7 @@
     
 @endsection
 @push('scriptssss')
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 const form = document.querySelector('form');

@@ -26,6 +26,8 @@
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">  
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assetsz/fonts/mdi/css/materialdesignicons.min.css" />
+
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -94,7 +96,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Selamat Datang di <span>GPDI PORSEA</span></h2>
+            <h2 data-aos="fade-down">SELAMAT DATANG DI <span>GPDI PORSEA</span></h2>
             {{-- <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a> --}}
           </div>
         </div>
@@ -263,7 +265,7 @@
       </div>
   </div>
 </div> --}}
-<div id="pendeta">
+{{-- <div id="pendeta">
 
   <div class="section-heading">
     <h2>Pendeta <em>Gereja</em></h2>
@@ -291,7 +293,46 @@
       </div>
 </div>
 </div>
-<!-- Team End -->
+<!-- Team End --> --}}
+
+ <!-- Team-->
+<div id="pendeta">
+ <section class="page-section bg-light" id="team">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Pendeta <em>Gereja</em></h2>
+      <p>Berikut adalah pendeta gereja GPDI Porsea</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="assets/img/team/team-2.jpg" alt="..." />
+          <h4>Eka Lumbanraja</h4>
+          <p class="text-muted">Pendeta</p>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="assets/img/team/team-1.jpg" alt="..." />
+          <h4>Indah cesia </h4>
+          <p class="text-muted">Pendeta</p>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">Mereka adalah orang yang berperan dalam memajukan gereja tercinta kita ini</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
     <!-- ======= Services Section ======= -->
     <div id="datagereja">
     <section id="services" class="services section-bg">
@@ -388,13 +429,7 @@
     </section><!-- End Services Section -->
   </div>
 
- 
-   
 
-   
-
-
-  
   <div id="contact">
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -434,20 +469,71 @@
                 </div><!-- End Info Item -->
       
               </div>
-      
-              {{-- <div class="row gy-4 mt-1">
-      
-                <div class="col-lg-12 ">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                    frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-                </div><!-- End Google Maps -->
-      
-                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=gpdi porsea&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google maps</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
-      
-            </div> --}}
-          </section><!-- End Contact Section -->
+              <br><br>
+
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1515&amp;height=462&amp;hl=en&amp;q=gpdiporsea&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcut Template</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:462px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:462px;}.gmap_iframe {height:462px!important;}</style></div>
+          
+            </section><!-- End Contact Section -->
   </div>
+  <footer class="ftco-footer ftco-bg-dark ftco-section mt-3" id="5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2 logo">Gereja <span>GPDI PORSEA</span></h2>
+            <p>"Kita bernyanyi di gereja, mengapa kita tidak bisa menari di sana?"<br> ~ George Bernard Shaw</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate">
+                <a href="#"><span class="mdi mdi-twitter"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#"><span class="mdi mdi-facebook"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#"><span class="mdi mdi-instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Quick Link</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/" class="py-1 d-block"><span class="mdi mdi-view-dashboard mr-3"></span>Home</a>
+              </li>
+             
+              <li>
+                <a href="/wartajemaatt" class="py-1 d-block"><span class="mdi mdi-newspaper mr-3"></span>Warta Jemaat</a>
+              </li>
+              <li>
+                <a href="/datajemaatt" class="py-1 d-block"><span class="mdi mdi-human-male-female mr-3"></span>Data Jemaat</a>
+              </li>
+              <li>
+                <a href="/jadwalibadahh" class="py-1 d-block"><span class="mdi mdi-calendar mr-3"></span>Jadwal Ibadah</a>
+              </li>
+              <li>
+                <a href="/photoo" class="py-1 d-block"><span class="fa fa-camera-retro mr-3"></span>Galeri</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Agenda Kegiatan</h2>
+            <div class="opening-hours">
+              <p>Minggu Pagi<span class="mb-3">10:00 am to 11:30 am</span></p>
+              <p>Minggu Siang <span class="mb-3">8:30 am to 11:30 am</span></p>
+              <p>Sabtu Sore<span class="mb-3">8:30 am to 11:30 am</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
   </main>
 

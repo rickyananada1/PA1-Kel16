@@ -40,6 +40,22 @@
                 </select>
               </div>
               <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tempat Lahir</label>
+                <input type="text" name="tempat" class="form-control" id="exampleInputEmail1" value="{{ $data->tempat }}" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Tanggal Lahir</label>
+              <input type="date" class="form-control" name="tanggal" value="{{ $data->tanggal }}" id="exampleInputPassword1">
+              </div> 
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Status Baptis</label>
+                <select class="form-select form-select-lg mb-3" name="baptis" aria-label=".form-select-lg example">
+                  <option selected>{{  $data->baptis  }}</option>
+                  <option value="1">Sudah Baptis</option>
+                  <option value="2">Belum Baptis</option>
+                </select>
+              </div>
+              <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Alamat</label>
                 <input type="text" class="form-control" name="alamat" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->alamat }}">
               </div>

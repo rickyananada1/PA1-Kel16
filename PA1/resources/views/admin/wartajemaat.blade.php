@@ -35,6 +35,7 @@
                   <th scope="col">Judul</th>
                   <th scope="col">Photo</th>
                   <th scope="col">Keterangan</th>
+                  <th scope="col">Tanggal</th>
                   <th scope="col">Aksi</th>
                 </tr>
               </thead>
@@ -45,12 +46,16 @@
                   <th scope="row"><?= $i ?> </th>
                   <td>{{ $row->judul }}</td>
                   <td> <a href="{{ $row->photo }}"> <img src="{{ asset($row->photo) }}"  style="width: 140px" height="120px"alt=""></a>
+                    <a href="{{ asset($row->photo) }}"></a>
+                  </td>
                   <td >{{ $row->keterangan }}</td>
-                    <a href="{{ asset($row->photo) }}"></a></td>
+                  <td>{{ $row->tanggal }}</td>
+                    
                   <td>
                     <a href="/tampilkanwarta/{{ $row->id }} " class="btn btn-outline-warning waves-effect">Edit</a>
                     <a href="#"   class="btn btn-outline-danger waves-effect delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
                   </td>
+                 
                 </tr>
                 <?php $i++ ?>
                 @endforeach
@@ -60,32 +65,35 @@
       </div>
     </div>
       
+    @endsection
       
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-      <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
-      <script>
-        $('.delete').click(function(){
+    @push('warta')
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script>
+      $('.delete').click(function(){
         var id = $(this).attr('id');
         Swal.fire({
-            title: 'Yakin?',
-            text: "Kamu akan menghapus data tersebut",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Ya, hapus saja!'
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            window.location="/deletewarta/"+id+""
+          title: 'Yakin?',
+          text: "Kamu akan menghapus data tersebut",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, hapus saja!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location="/deletewarta/"+id+""
                             Swal.fire(
                                 'Dihapus!',
                                 'Data sudah terhapus',
                                 'success'
                                 )
-                            }
-                        })
-                    })
-                </script>
+                              }
+                            })
+                          })
+                          </script>
     
-@endsection
+    @endpush

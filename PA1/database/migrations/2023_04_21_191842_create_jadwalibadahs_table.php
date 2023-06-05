@@ -18,12 +18,15 @@ class CreateJadwalibadahsTable extends Migration
             $table->string('namaibadah');
             $table->string('ayatalkitab');
             $table->date('haritanggal');
-            $table->text('deskripsi')->nullable();
+            $table->enum('statusbaptis',['sudahbaptis','belumbaptis']);
+            $table->string('pelayan');
+            $table->string('lokasiibadah');
             $table->timestamps();
         });
     }
+    
 
-    /**
+    /** 
      * Reverse the migrations.
      *
      * @return void

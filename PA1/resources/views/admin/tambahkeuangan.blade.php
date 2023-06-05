@@ -33,21 +33,21 @@
                             <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Hari & tanggal</label>
                             <input type="date" class="form-control" name="tanggal" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Jumlah Pemasukan</label>
+                          <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
+                          <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      </div> 
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Jumlah </label>
                             <input type="text" class="form-control" name="pemasukan" id="exampleInputEmail1" aria-describedby="emailHelp">
                             
                         </div>
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Jumlah Pengeluaran</label>
                             <input type="text" class="form-control" name="pengeluaran" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5"></textarea>
-                          </div>              
+                        </div> --}}
+                                    
                         <div class="mb-3 form-check">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>

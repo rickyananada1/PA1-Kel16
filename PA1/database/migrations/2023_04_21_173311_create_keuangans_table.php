@@ -17,7 +17,7 @@ class CreateKeuangansTable extends Migration
             $table->id();
             $table->date('tanggal');
             $table->biginteger('pemasukan');
-            $table->biginteger('pengeluaran');
+            // $table->biginteger('pengeluaran');
             $table->string('deskripsi')->nullable();
             $table->timestamps();
         });

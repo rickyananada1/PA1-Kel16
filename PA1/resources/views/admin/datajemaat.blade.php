@@ -60,9 +60,11 @@
                 <th >No</th>
                 <th >Nama</th>
                 <th >Jenis Kelamin</th>
+                <th >Tempat Lahir</th>
+                <th>Tanggal Lahir</th>
+                <th>Status Bapits</th>
                 <th >Alamat</th>
                 <th >No Telepon</th>
-                <th >Tempat&Tanggal lahir</th>
                 {{-- <th >Bapti</th>
                 <th scope="col">Dibuat pada </th> --}}
                 <th>Aksi</th>
@@ -76,9 +78,12 @@
                         <th scope="row">{{ $index + $data->firstItem() }}</th> <!-- firstitem agar nomor terutut walau dipagination berbeda-->
                         <td>{{ $row->nama }}</td>
                         <td>{{ $row->jeniskelamin }}</td>
+                        <td>{{ $row->tempat }}</td>
+                        <td>{{ $row->tanggal }}</td>
+                        <td>{{ $row->baptis }}</td>
                         <td>{{ $row->alamat }}</td>
                         <td>0{{ $row->notelpon }}</td>
-                        <td> {{ $row->created_at }} </td>
+                        {{-- <td> {{ $row->created_at }} </td> --}}
                         <td>
                             <a href="/tampilkandata/{{ $row->id }}" class="btn btn-outline-warning waves-effect">Edit</a>
                             <a href="#" class="btn btn-outline-danger waves-effect delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
@@ -92,6 +97,7 @@
         {{ $data->links() }}
         <!-- Optional JavaScript; choose one of the two! -->
     </div>
+
 </div>
 
 @endsection

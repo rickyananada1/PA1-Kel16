@@ -17,7 +17,7 @@ class WartaController extends Controller
             return view('admin.wartajemaat',compact('data'));
         
     }
-    public function tambahwarta(){
+public function tambahwarta(){
         return view('admin.tambahwarta');
     }
 
@@ -25,6 +25,7 @@ class WartaController extends Controller
         $validated= $request->validate([
             'judul' =>'required|unique:wartas|min:2',
             'keterangan' =>'max:100',
+            'tanggal' =>'required',
             'photo' =>  'required|mimes:jpg,jpeg,png',
         ],
         [
@@ -32,6 +33,7 @@ class WartaController extends Controller
             'judul.min' => ' maksimal 20 karakter',
             'keterangan.max'=> ' Keterangan maksimal 100 karakter',
             'photo.required' => 'Photo Tidak boleh Kosong', 
+            'tanggal.required' => 'tanggal Tidak boleh Kosong', 
             'photo.mimes'=> 'Photo tidak dapat digunakan',    
         ]);
         $photo = $request->file('photo');
@@ -47,6 +49,7 @@ class WartaController extends Controller
             'judul' =>  $request->judul,
             'keterangan' => $request->keterangan,
             'photo' => $image,
+            'tanggal' => $request->tanggal,
             'created_at' => Carbon::now()
         ]);
 

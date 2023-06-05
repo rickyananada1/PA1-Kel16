@@ -41,10 +41,15 @@
               <input type="date" class="form-control" name="haritanggal" id="exampleInputPassword1">
             </div> 
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-              <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5"></textarea>
+              <label for="exampleInputEmail1" class="form-label">Pelayan Ibadah</label>
+              <input type="text" class="form-control" name="pelayan" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div> 
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Lokasi Ibadah</label>
+              <input type="text" class="form-control" name="lokasiibadah" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-         
+
+          
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>

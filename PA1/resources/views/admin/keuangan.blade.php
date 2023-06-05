@@ -32,32 +32,29 @@
             <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">No</th>
+                    {{-- <th scope="col">No</th> --}}
                     <th scope="col">Tanggal</th>
-                    <th scope="col">Jumlah Pemasukan</th>
-                    <th scope="col">Jumlah Pengeluaran</th>
                     <th scope="col">Deksripsi</th>
+                    <th scope="col">Jumlah</th>
+                    {{-- <th scope="col">Jumlah Pengeluaran</th> --}}
                     <th>aksi</th>
     
                   </tr>
                 </thead>
                 
                 <tbody>
-                   <?php $i=1; ?>
                     @foreach ($data as $row)
                         
                     <tr>
-                    <th scope="row"> <?php echo$i ?></th>
-                    <td>{{ $row->tanggal }}</td>
-                    <td>Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
-                    <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td>
-                    <td>{{ $row->deskripsi }}</td>
-                    <td>
-                        <a href="/tampilkankeuangan/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
-                        <a href="#" class="btn btn-danger delete"  id="{{ $row->id }}">Delete</a>
-                    </td>
+                        <td>{{ $row->tanggal }}</td>
+                        <td>{{ $row->deskripsi }}</td>
+                       <td>Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
+                    {{-- <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td> --}}
+                        <td>
+                            <a href="/tampilkankeuangan/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
+                            <a href="#" class="btn btn-danger delete"  id="{{ $row->id }}">Delete</a>
+                        </td>
                 </tr>
-                <?php $i++ ?>
          
                 @endforeach
             </tbody>

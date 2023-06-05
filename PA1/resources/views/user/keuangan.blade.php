@@ -1,3 +1,14 @@
+@push('jsss')
+<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+<script>
+  $(document).ready( function () {
+    $('#y').DataTable();
+} );
+</script>
+@endpush
+@push('cssss')
+<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+@endpush
 @extends('layout.user')
 
 @section('content')
@@ -16,15 +27,16 @@
 </div>
 </div>
 </div><!-- End Breadcrumbs -->
-
-    <table class="table">
+<div class="container">
+<br><br>
+    <table class="table"id="y">
         <thead>
           <tr>
-            <th scope="col">No</th>
+            {{-- <th scope="col">No</th> --}}
             <th scope="col">Tanggal</th>
-            <th scope="col">Jumlah Pemasukan</th>
-            <th scope="col">Jumlah Pengeluaran</th>
-            <th scope="col">Deksripsi</th>
+            <th scope="col">Keterangan</th>
+            <th scope="col">Jumlah </th>
+            {{-- <th scope="col">Jumlah Pengeluaran</th> --}}
           </tr>
         </thead>
         
@@ -33,20 +45,20 @@
             @foreach ($data as $row)
                 
             <tr>
-            <th scope="row"> <?php echo$i ?></th>
+            {{-- <th scope="row"> </th> --}}
             <td>{{ $row->tanggal }}</td>
-            <td>Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
-            <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td>
             <td>{{ $row->deskripsi }}</td>
+            <td>Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
+            {{-- <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td> --}}
            
         </tr>
-        <?php $i++ ?>
     
         @endforeach
     </tbody>
     </table>
   </div>
 </div>
+
 </main>
     
 @endsection
