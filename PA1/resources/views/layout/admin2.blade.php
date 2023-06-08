@@ -25,8 +25,14 @@
 
    <link
      rel="stylesheet"
-     href="{{ asset('admin/dist/css/adminlte.min.css') }}"
-     @stack('css')/>
+     href="{{ asset('admin/dist/css/adminlte.min.css') }}"/>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Rowdies:wght@300&family=Tilt+Prism&display=swap');
+
+  </style>
+
+     @stack('keuangan.css')
+     @stack('css')
 </head>
 <!--
 `body` tag options:
@@ -239,6 +245,7 @@
 @stack('sss')
 @stack('scriptssssss')
 @stack('script')
+@stack('photo')
 
 </body>
 </html>

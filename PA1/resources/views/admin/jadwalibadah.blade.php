@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Jadwal Ibadah</h1>
+            {{-- <h1 class="m-0">Jadwal Ibadah</h1> --}}
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -18,6 +18,8 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
+
+    <h1 class="text-center mb-4"style="font-family: 'Rowdies', cursive;"> Jadwal Ibadah</h1>
 
 <div class="container">
   <a href="/tambahjadwal" type="button" class="btn btn-success">Tambah +</a>

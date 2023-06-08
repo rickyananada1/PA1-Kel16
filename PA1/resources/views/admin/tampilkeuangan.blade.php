@@ -29,8 +29,11 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Hari & tanggal</label>
                             <input type="date" class="form-control" name="tanggal" id="exampleInputEmail1"  aria-describedby="emailHelp">
-                
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Kategori</label>
+                            <input type="text" class="form-control" name="kategori" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div> 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Jumlah Pemasukan</label>
                             <input type="text" class="form-control" name="pemasukan" id="exampleInputEmail1" value="{{ $data->pemasukan }}" aria-describedby="emailHelp">
@@ -42,8 +45,8 @@
                 
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5">{{ $data->deskripsi }}</textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
+                            <textarea class="form-control" name="keterangan" id="exampleFormControlTextarea1" rows="5">{{ $data->deskripsi }}</textarea>
                         </div>
                         <div class="mb-3 form-check">
                         </div>

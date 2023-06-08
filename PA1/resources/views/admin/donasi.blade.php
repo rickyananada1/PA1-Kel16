@@ -18,6 +18,7 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
+  <h1 class="text-center mb-4" style="font-family: 'Rowdies', cursive;"> Data Donasi</h1>
 
 <div class="container">
     <a href="/tambahdonasi" type="button" class="btn btn-success">Tambah +</a>

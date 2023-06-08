@@ -54,11 +54,11 @@
           <li class="dropdown"><a href="#"><span>Tentang Gereja</span> <i
             class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
-            <li><a href="#sejarah">Sejarah Gereja</a></li>
-            <li><a href="#visimisi">Visi Misi Gereja</a></li>
-            <li><a href="#pendeta">Pelayan Gereja</a></li>
-            <li><a href="#datagereja">Data Gereja</a></li>
-            <li><a href="#contact">Contact & alamat</a></li>
+            <li><a href="/">Sejarah Gereja</a></li>
+            <li><a href="/">Visi Misi Gereja</a></li>
+            <li><a href="/">Pelayan Gereja</a></li>
+            <li><a href="/">Data Gereja</a></li>
+            <li><a href="/">Contact & alamat</a></li>
           </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Jadwal ibadah & Warta Jemaat</span> <i

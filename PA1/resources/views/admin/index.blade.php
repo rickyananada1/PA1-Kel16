@@ -25,16 +25,18 @@
      rel="stylesheet"
      href="{{ asset('admin/dist/css/adminlte.min.css') }}"
      @stack('css')/>
+  <link href="assets/css/dashboardadmin.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Rowdies:wght@300&family=Tilt+Prism&display=swap');
+  
+  
+  </style>
+  
+  
 </head>
-<!--
-`body` tag options:
 
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
-
-  * sidebar-collapse
-  * sidebar-mini
--->
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
@@ -61,10 +63,7 @@
       </li>
   </nav>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="index3.html" class="brand-link">
-      <img src="{{ asset('admin/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin GPDI PORSEA</span>
-    </a>
+
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -150,58 +149,7 @@
                     <p>Galeri</p>
                   </a>
                 </li>
-          {{-- <li class="nav-header">Tambah Data</li> --}}
-
-
-          {{-- <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Forms 
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/tambahjemaat" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Jemaat</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tambahwarta" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Warta Jemaat</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tambahjadwal" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Jadwal Ibadah</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tambahkeuangan" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Informasi Keuangan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tambahdonasi" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Donasi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tambahphoto" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Galeri</p>
-                </a>
-              </li>
-            </ul>
-          </li> --}}
-
-        
+     
 
          
         </ul>
@@ -230,74 +178,101 @@
       </div><!-- /.container-fluid -->
     </div>
   <!-- /.content-wrapper -->
-  <section class="content">
-    <div class="container-fluid">
-      <!-- Info boxes -->
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="info-box">
-            <span class="info-box-icon bg-info elevation-1"><i class="fas fa-users"></i></span>
+<div id="datagereja">
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+        
+       
+        <h1 class="text-center mb-4" style="font-family: 'Rowdies', cursive;">Quick link menuju halaman User</h1>
 
-            <div class="info-box-content" data-wow-delay="0.7s">
-              <span class="info-box-text">Jumlah jemaat</span>
-              <span class="info-box-number">
-                {{ $jumlahjemaat }}
-                <small>Orang</small>
-              </span>
+          {{-- <p>Berikut adalah yang dapat diihat oleh semua jemaat</p> --}}
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar-date-fill"></i>
+              </div>
+              <h3>Jadwal Ibadah</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
+                tempore et consequatur.</p>
+              <a href="/jadwalibadahh" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="info-box mb-3">
-            <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+          </div><!-- End Service Item -->
 
-            <div class="info-box-content">
-              <span class="info-box-text">Likes</span>
-              <span class="info-box-number">41,410</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-newspaper"></i>
+              </div>
+              <h3>Warta Jemaat</h3>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
+                nesciunt dolorem.</p>
+              <a href="/wartajemaatt" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
+          </div><!-- End Service Item -->
 
-        <!-- fix for small devices only -->
-        <div class="clearfix hidden-md-up"></div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="info-box mb-3">
-            <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Sales</span>
-              <span class="info-box-number">760</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-person-vcard"></i>
+              </div>
+              <h3>Data Jemaat</h3>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
+                eos earum corrupti.</p>
+              <a href="/datajemaatt" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="info-box mb-3">
-            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+          </div><!-- End Service Item -->
 
-            <div class="info-box-content">
-              <span class="info-box-text">New Members</span>
-              <span class="info-box-number">2,000</span>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <h3>Informasi Keuangan</h3>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
+                adipisci neque.</p>
+              <a href="/keuangann" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-gift"></i>
+              </div>
+              <h3>Data donasi</h3>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
+                alias eius labore.</p>
+              <a href="/donasii" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-image"></i>
+              </div>
+              <h3>Galeri</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
+                recusandae ducimus enim.</p>
+              <a href="/photoo" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
-        <!-- /.col -->
       </div>
-      <!-- /.row -->
-  </div>
-</div>
-</section>
+    </div>
+<br><br>
+      </div>
+    </section><!-- End Services Section --> 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->

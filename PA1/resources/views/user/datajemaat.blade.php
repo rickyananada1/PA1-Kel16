@@ -9,6 +9,7 @@
 @push('css')
 <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
 @endpush
+
 @extends('layout.user')
 @section('content')
 
@@ -35,29 +36,34 @@
                     <th scope="col">No</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Jenis Kelamin</th>
+                    <th scope="col">Tempat Lahir</th>
+                    <th scope="col">Tanggal Lahir</th>
+                    <th scope="col">Status Baptis</th>
                     <th scope="col">Alamat</th>
-                    <th scope="col">No Telepon</th>
-                    <th scope="col">Data Jemaat</th>
+                    
                     
                 </tr>
             </thead>
             <tbody>
                 <?php $nomor=1 ?>
-                @foreach ($data as $index=>$row)
+                @foreach ($data as $row)
                 <tr>
-                    <th scope="row">{{ $index + $data->firstItem() }}</th> <!-- firstitem agar nomor terutut walau dipagination berbeda-->
+                    <td><?= $nomor?></td>
+                    {{-- <th scope="row">{{ $ }}</th> <!-- firstitem agar nomor terutut walau dipagination berbeda--> --}}
                     <td>{{ $row->nama }}</td>
                     <td>{{ $row->jeniskelamin }}</td>
+                    <td>{{ $row->tempat }}</td>
+                    <td>{{ $row->tanggal }}</td>
+                    <td>{{ $row->baptis }}</td>
                     <td>{{ $row->alamat }}</td>
-                    <td>0{{ $row->notelpon }}</td>
-                    <td>sadkakdsa </td>
+                    {{-- <td>0{{ $row->notelpon }}</td> --}}
                 </tr>
                 
-            </tbody>
-            @endforeach
+            </tbody>  
             <?php $nomor++ ?>   
+            @endforeach
           </table>
-          {{ $data->links() }}
+          {{-- {{ $data->links() }} --}}
         </div>
       </div>
       

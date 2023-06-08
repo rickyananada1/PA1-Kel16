@@ -9,7 +9,7 @@
 <h2>Galeri Jemaat</h2>
 <ol>
  <li><a href="/">Home</a></li>
- <li><a href="/jadwalibadahh">Galeri</a></li>
+ <li>Galeri</li>
 
 </ol>
 </div>

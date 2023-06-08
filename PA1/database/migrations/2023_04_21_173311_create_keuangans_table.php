@@ -16,9 +16,10 @@ class CreateKeuangansTable extends Migration
         Schema::create('keuangans', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal');
+            $table->string('kategori');
             $table->biginteger('pemasukan');
-            // $table->biginteger('pengeluaran');
-            $table->string('deskripsi')->nullable();
+            $table->biginteger('pengeluaran');
+            $table->string('keterangan')->nullable();
             $table->timestamps();
         });
     }

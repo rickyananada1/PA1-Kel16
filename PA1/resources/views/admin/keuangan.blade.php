@@ -19,7 +19,7 @@
 </div><!-- /.container-fluid -->
 </div>
 <body>
-    <h1 class="text-center mb-4">Halaman Keuangan</h1>
+    <h1 class="text-center mb-4" style="font-family: 'Rowdies', cursive;">Halaman Keuangan</h1>
     <div class="container">
         <a href="/tambahkeuangan" type="button" class="btn btn-success">Tambah +</a>
         @if ($message = Session::get('success'))
@@ -29,44 +29,89 @@
             
         @endif
         <div class="row">
-            <table class="table">
-                <thead>
-                  <tr>
-                    {{-- <th scope="col">No</th> --}}
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Deksripsi</th>
-                    <th scope="col">Jumlah</th>
-                    {{-- <th scope="col">Jumlah Pengeluaran</th> --}}
-                    <th>aksi</th>
-    
-                  </tr>
-                </thead>
-                
-                <tbody>
-                    @foreach ($data as $row)
-                        
-                    <tr>
-                        <td>{{ $row->tanggal }}</td>
-                        <td>{{ $row->deskripsi }}</td>
-                       <td>Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
-                    {{-- <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td> --}}
-                        <td>
-                            <a href="/tampilkankeuangan/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
-                            <a href="#" class="btn btn-danger delete"  id="{{ $row->id }}">Delete</a>
-                        </td>
-                </tr>
-         
-                @endforeach
-            </tbody>
-        </table>
+          <table>
+            <tr>
+              {{-- <th scope="col">No</th> --}}
+              <th scope="col">Tanggal</th>
+              <th scope="col">Kategori</th>
+              <th scope="col">Keterangan</th>
+              <th scope="col">Pemasukan</th>
+              <th scope="col">Pengeluaran</th>
+              {{-- <th scope="col">Jumlah Pengeluaran</th> --}}
+              <th>aksi</th>
+            </tr>
+            @foreach ($data as $row)
+                              
+            <tr>
+                <td>{{ $row->tanggal }}</td>
+                <td>{{ $row->kategori }}</td>
+                <td>{{ $row->keterangan }}</td>
+                <td>Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
+                <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td>
+                <td>
+                    <a href="/tampilkankeuangan/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
+                    <a href="#" class="btn btn-danger delete"  id="{{ $row->id }}">Delete</a>
+                </td>
+            </tr>
+            @endforeach
+          <tr>
+            <td></td>
+          {{-- <th scope="row"> </th> --}}
+            <td></td>
+            <td style="text-align: right;" >TOTAL </td>
+            <td> Rp.{{ number_format($pengeluaran,0,',','.' )}}</td>
+            <td> Rp. {{ number_format($pemasukan,0,',','.') }}  </td>
+          </tr>
+          <tr>
+            <td></td>
+          {{-- <th scope="row"> </th> --}}
+            <td></td>
+            <td></td>
+            <td>SALDO</td>
+            <td> Rp.{{number_format($saldo,0,',','.') }} </td>
+          </tr>
+          </table>
     </div>
+  </div>
 </div>
+<div >
+
+
+
+  
+  
+    
+ 
+  
+
 @endsection
+
+
+@push('keuangan.css')
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Rowdies:wght@300&family=Tilt+Prism&display=swap');
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  </style>
+
+@endpush
+
 @push('s')
 
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+<script src="assets/js/jquery-3.4.1.slim.min.js"></scrip>
 <script>
     $('.delete').click(function(){
         var id = $(this).attr('id');

@@ -16,8 +16,8 @@
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
-    </div>
-      <h1 text-center mt-4></h1>
+    </div>    
+    <h1 class="text-center mb-4"style="font-family: 'Rowdies', cursive;"> Galeri</h1>
       <div class="container">
         <a href="/tambahphoto " type="button" class="btn btn-success">Tambah+</a>
           <div class="row">
@@ -55,8 +55,10 @@
             </table>
           </div>
         </div>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        @push('photo')
+            
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
       <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
       <script>
@@ -74,12 +76,13 @@
                         if (result.isConfirmed) {
                             window.location="/deletephoto/"+id+""
                             Swal.fire(
-                                'Dihapus!',
-                                'Data sudah terhapus',
-                                'success'
-                                )
+                              'Dihapus!',
+                              'Data sudah terhapus',
+                              'success'
+                              )
                             }
+                          })
                         })
-                    })
-                </script>
+      </script>
+@endpush
 @endsection 

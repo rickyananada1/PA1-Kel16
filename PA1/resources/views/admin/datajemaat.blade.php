@@ -19,24 +19,14 @@
         </div><!-- /.col -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
-  </div>
-    
+  </div>  
+  
+
+  <h1 class="text-center mb-4"style="font-family: 'Rowdies', cursive;">Data Jemaat</h1>
+
 <div class="container">
     <a href="/tambahjemaat" type="button" class="btn btn-success">Tambah+</a>
-    <div class="row g-3 align-items-center mt-1">
-        <div class="col-auto">
-            <form action="/datajemaat" method="get">
-              <div class="form-inline">
-                <div class="input-group" data-widget="sidebar-search">
-                <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
-                <button class="cari">
-                  <i class="fas fa-search fa-fw"></i>
-                </button>
-                </div>
-              </div>
-              </form>
-        </div>
-      </div>
+
     <div class="row">
         <!-- Menampilkan pesan success jika data berhasil di inpunput -->
         @if ($message= Session::get('success'))
@@ -62,7 +52,7 @@
                 <th >Jenis Kelamin</th>
                 <th >Tempat Lahir</th>
                 <th>Tanggal Lahir</th>
-                <th>Status Bapits</th>
+                <th>Status Baptis</th>
                 <th >Alamat</th>
                 <th >No Telepon</th>
                 {{-- <th >Bapti</th>
@@ -75,7 +65,7 @@
                 @foreach ($data as $index=>$row)
                     
                     <tr>
-                        <th scope="row">{{ $index + $data->firstItem() }}</th> <!-- firstitem agar nomor terutut walau dipagination berbeda-->
+                        <th scope="row"><?=$nomor ?></th> <!-- firstitem agar nomor terutut walau dipagination berbeda-->
                         <td>{{ $row->nama }}</td>
                         <td>{{ $row->jeniskelamin }}</td>
                         <td>{{ $row->tempat }}</td>
@@ -94,7 +84,7 @@
             
             @endforeach
         </table>
-        {{ $data->links() }}
+        {{-- {{ $data->links() }} --}}
         <!-- Optional JavaScript; choose one of the two! -->
     </div>
 

@@ -38,6 +38,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+
+#pendeta .team-member  {
+font-family:'Dosis', sans-serif;
+
+  }
 </style>
 <body>
 
@@ -62,7 +69,7 @@
               <li><a href="#sejarah">Sejarah Gereja</a></li>
               <li><a href="#visimisi">Visi Misi Gereja</a></li>
               <li><a href="#pendeta">Pelayan Gereja</a></li>
-              <li><a href="#datagereja">Data Gereja</a></li>
+              {{-- <li><a href="#datagereja">Data Gereja</a></li> --}}
               <li><a href="#contact">Contact & alamat</a></li>
             </ul>
             </li>
@@ -230,70 +237,8 @@
 <br><br>
 <br><br>
  <!-- Team Start -->
- {{-- <div class="container-xxl py-5">
-  <div class="container">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-          <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
-          <h1 class="mb-5">Experienced Team Members</h1>
-      </div>
-      <div class="row g-">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item rounded p-4">
-                  <img class="img-fluid rounded mb-4" src="assets/img/team/team-1.jpg" alt="">
-                  <h5>Adam Crew</h5>
-                  <p class="text-primary">Founder</p>
-                  <div class="d-flex justify-content-center">
-                      <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="team-item rounded p-4">
-                  <img class="img-fluid rounded mb-4" src="assets/img/team/team-1.jpg" alt="">
-                  <h5>Doris Jordan</h5>
-                  <p class="text-primary">Veterinarian</p>
-                  <div class="d-flex justify-content-center">
-                      <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-              </div>
-          </div>
-         
-      </div>
-  </div>
-</div> --}}
-{{-- <div id="pendeta">
 
-  <div class="section-heading">
-    <h2>Pendeta <em>Gereja</em></h2>
-    <p>Berikut adalah pendeta gereja GPDI Porsea</p>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
-      <div class="team text-center rounded p-3 py-4">
-        <img src="assets/img/team/team-2.jpg" class="img-fluid avatar avatar-medium shadow rounded-circle" style="object-fit: cover; width: 200px; height: 200px;" alt="">
-        <div class="content mt-3">
-          <h4 class="title mb-0">yaya</h4>
-          <small class="text-muted">wkwk</small>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
-      <div class="team text-center rounded p-3 py-4">
-        <img src="assets/img/team/team-1.jpg" class="img-fluid avatar avatar-medium shadow rounded-circle" style="object-fit: cover; width: 200px; height: 200px;" alt="">
-        <div class="content mt-3">
-            <h4 class="title mb-0">yaya</h4>
-            <small class="text-muted">wkwk</small>
-            <p></p>
-          </div>
-        </div>
-      </div>
-</div>
-</div>
-<!-- Team End --> --}}
+<!-- Team End -->
 
  <!-- Team-->
 <div id="pendeta">
@@ -309,9 +254,9 @@
           <img class="mx-auto rounded-circle" src="assets/img/team/team-2.jpg" alt="..." />
           <h4>Eka Lumbanraja</h4>
           <p class="text-muted">Pendeta</p>
-          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+          {{-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
           <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-instagram"></i></a> --}}
         </div>
       </div>
       <div class="col-lg-6">
@@ -319,22 +264,58 @@
           <img class="mx-auto rounded-circle" src="assets/img/team/team-1.jpg" alt="..." />
           <h4>Indah cesia </h4>
           <p class="text-muted">Pendeta</p>
-          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-instagram"></i></a>
+          
+        </div>
+      </div>
+    </div>
+    {{-- <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">Mereka adalah orang yang berperan dalam memajukan gereja tercinta kita ini</p>
+      </div>
+    </div> --}}
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="assets/img/team/team-3.jpg" alt="..." />
+          <h4>Eka Lumbanraja</h4>
+          <p class="text-muted">Pendeta</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="assets/img/team/team-4.jpg" alt="..." />
+          <h4>Indah cesia </h4>
+          <p class="text-muted">Pendeta</p>
+         
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <p class="large text-muted">Mereka adalah orang yang berperan dalam memajukan gereja tercinta kita ini</p>
+      <div class="col-lg-6">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="assets/img/team/team-5.jpg" alt="..." />
+          <h4>Eka Lumbanraja</h4>
+          <p class="text-muted">Pendeta</p>
+         
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="assets/img/team/team-6.jpg" alt="..." />
+          <h4>Indah cesia </h4>
+          <p class="text-muted">Pendeta</p>
+         
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 </section>
     <!-- ======= Services Section ======= -->
-    <div id="datagereja">
+    {{-- <div id="datagereja">
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
         
@@ -426,7 +407,7 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Services Section --> --}}
   </div>
 
 
@@ -448,7 +429,7 @@
                   <div class="info-item  d-flex flex-column justify-content-center align-items-center">
                     <i class="bi bi-map"></i>
                     <h3>Alamat </h3>
-                    <p>Jalan jalan jalan jalan</p>
+                    <p>Jl. Gereja Ulu Bius No.102Parparean III, Kec. Porsea, Toba, br Sumatera Utara 22384</p>
                   </div>
                 </div><!-- End Info Item -->
       
@@ -475,6 +456,8 @@
           
             </section><!-- End Contact Section -->
   </div>
+
+  
   <footer class="ftco-footer ftco-bg-dark ftco-section mt-3" id="5">
     <div class="container">
       <div class="row mb-5">

@@ -17,7 +17,7 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-      <h1 text-center mt-4></h1>
+    <h1 class="text-center mb-4"style="font-family: 'Rowdies', cursive;" >Warta Jemaat</h1>
       <div class="container">
         <a href="/tambahwarta " type="button" class="btn btn-success">Tambah+</a>
           <div class="row">

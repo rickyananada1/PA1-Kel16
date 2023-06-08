@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Session;
-use App\Models\photo;
+use App\Models\galeri;
 use Carbon\carbon;
 
-class PhotoController extends Controller
+class GaleriController extends Controller
 {
 
     public function index(){
-        $data = photo::all();
+        $data = galeri::all();
         return view('admin.photo',compact('data'));
     } 
     public function tambahphoto(){
@@ -39,7 +39,7 @@ class PhotoController extends Controller
         $image = $lokasi.$img_name;
         $photo->move($lokasi,$img_name);
 
-        photo::insert([
+        galeri::insert([
             'nama' => $request->nama,
             'photo' => $image,
             'created_at' => Carbon::now()
@@ -49,7 +49,7 @@ class PhotoController extends Controller
     }
     
     public function tampilkanphoto($id){
-        $data = photo::find($id);
+        $data = galeri::find($id);
         return view('admin.tampilphoto',compact('data')); 
 
     }
@@ -87,7 +87,7 @@ class PhotoController extends Controller
             $photo->move($lokasi,$img_name);
     
             unlink($photolama);
-            photo::find($id)->update([
+            galeri::find($id)->update([
                 'nama' => $request->nama,
                 'photo' => $image,
                 'created_at' => Carbon::now()
@@ -96,7 +96,7 @@ class PhotoController extends Controller
             return redirect()->route('photo')->with('success','Data berhasil dimasukkan');
     }
         else{
-            photo::find($id)->update([
+            galeri::find($id)->update([
                 'nama' => $request->nama,
                 'created_at' => Carbon::now()
             ]);
@@ -108,16 +108,16 @@ class PhotoController extends Controller
     }
     
     public function deletephoto($id){
-        $photo = photo::find($id);
+        $photo = galeri::find($id);
         $photolama =$photo->photo;
         unlink($photolama);
 
-        photo::find($id)->delete();
+        galeri::find($id)->delete();
         return redirect()->route('photo')->with('success','Data berhasil dihapus');
     }
 
     public function indexx(){
-        $data = photo::latest()->paginate(9);
+        $data = galeri::latest()->paginate(9);
         return view('user.galeri',compact('data'));
     } 
 

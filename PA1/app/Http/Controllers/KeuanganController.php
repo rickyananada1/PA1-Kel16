@@ -8,8 +8,11 @@ use App\Models\Keuangan;
 class KeuanganController extends Controller
 {
     public function index(){
+        $pengeluaran = keuangan::sum('pemasukan');
+        $pemasukan = keuangan::sum('pengeluaran');
+        $saldo = $pengeluaran - $pemasukan;
         $data = keuangan::all();
-        return view('admin.keuangan',compact('data'));
+        return view('admin.keuangan',compact('data','saldo','pemasukan','pengeluaran' ));
     }
     public function tambahkeuangan(){
         return view('admin.tambahkeuangan');
@@ -34,8 +37,11 @@ class KeuanganController extends Controller
     }
     
     public function indexx(){
+        $pengeluaran = keuangan::sum('pemasukan');
+        $pemasukan = keuangan::sum('pengeluaran');
+        $saldo = $pengeluaran - $pemasukan;
         $data = keuangan::all();
-        return view('user.keuangan',compact('data'));
+        return view('user.keuangan',compact('data','saldo','pemasukan','pengeluaran'));
     }
 
 }
