@@ -16,7 +16,7 @@ class CreateKeuangansTable extends Migration
         Schema::create('keuangans', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal');
-            $table->string('kategori');
+            $table->enum('kategori',['Kas gereja','Persembahan','Danasosial','Donasi','Lainnya']);
             $table->biginteger('pemasukan');
             $table->biginteger('pengeluaran');
             $table->string('keterangan')->nullable();

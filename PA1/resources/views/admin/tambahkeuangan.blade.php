@@ -34,9 +34,17 @@
                             <label for="exampleInputEmail1" class="form-label">Hari & tanggal</label>
                             <input type="date" class="form-control" name="tanggal" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                          <input type="text" class="form-control" name="kategori" id="exampleInputEmail1" aria-describedby="emailHelp">
+                       
+                        <div class="form-group">
+                          <label for="exampleInputEmail1" class="form-label">kategori</label>
+                          <select class="form-control select2" name="kategori" aria-label=".form-select-lg example">
+                            <option selected>Pilih Kategori </option>
+                            <option value="1">Kas Gereja</option>
+                            <option value="2">Persembahan</option>
+                            <option value="3">Dana Sosial</option>
+                            <option value="4">Donasi</option>
+                            <option value="5">Lainnya</option>
+                          </select>
                         </div> 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Jumlah Pemasukan</label>

@@ -21,7 +21,7 @@
 <body>
     <h1 class="text-center mb-4" style="font-family: 'Rowdies', cursive;">Halaman Keuangan</h1>
     <div class="container">
-        <a href="/tambahkeuangan" type="button" class="btn btn-success">Tambah +</a>
+        <a href="/tambahkeuangan" type="button" class="btn btn-success" >Tambah +</a>
         @if ($message = Session::get('success'))
         <div class="alert alert-success" role="alert">
             {{ $message }}
