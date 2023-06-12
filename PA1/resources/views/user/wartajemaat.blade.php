@@ -54,8 +54,8 @@
       title: title,
       text: deskripsi,
       imageUrl: image,
-      imageWidth: 400,
-      imageHeight: 200,
+      imageWidth: 500,
+      imageHeight: 400,
       imageAlt: 'Custom image',
     });
   }

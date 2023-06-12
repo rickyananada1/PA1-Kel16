@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin GPDI PORSEA</title>
 
+  <link rel="icon shortcut" type="image/jpg" href="assets/img/cross.png" />
      <!-- Google Font: Source Sans Pro -->
+
      <link
      rel="stylesheet"
      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
@@ -33,16 +35,16 @@
 
      @stack('keuangan.css')
      @stack('css')
+     @stack('ya')
+     @stack('ye')
+     @stack('yu')
+     @stack('yi')
+
+
+
+
 </head>
-<!--
-`body` tag options:
 
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
-
-  * sidebar-collapse
-  * sidebar-mini
--->
 <style>
    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
@@ -57,28 +59,26 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
+        {{-- <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Home</a>
+        </li> --}}
+        {{-- <li class="nav-item d-none d-sm-inline-block">
+          <a href="https://api.whatsapp.com/send?phone=6281369284351" class="nav-link">Kirim Pesan Ke Developer</a>
+        </li> --}}
     </ul>
 
-    <!-- Right navbar links -->
+
     <ul class="navbar-nav ml-auto">
-  
+    
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
-      {{-- <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{ route('logout') }}" class="nav-link">Logout</a>
       </li>
-    </ul> --}}
+      </ul>
   </nav>
   <!-- /.navbar -->
 
@@ -95,14 +95,13 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{ asset('assets/img/gereja/logo.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
-        <div class="info">
-          <a href="#" class="d-block">ADMIN GPDI</a>
-          <a href="{{ route('logout') }}" class="d-block">Logout</a>
-        </div>
+  
+      <div class="info">
+        <a href="#" class="d-block">ADMIN GPDI</a>
       </div>
-
+      </div>
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
@@ -232,6 +231,7 @@
 <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 @stack('scripts')
 @stack('scriptss')
 @stack('scriptsss')
@@ -246,6 +246,7 @@
 @stack('scriptssssss')
 @stack('script')
 @stack('photo')
+@stack('warta')
 
 </body>
 </html>

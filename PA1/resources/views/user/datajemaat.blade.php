@@ -1,72 +1,64 @@
+@extends('layout.user')
+
+@push('css')
+<link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
+@endpush
+
+@section('content')
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
+        <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+            <h2>Data Jemaat</h2>
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li>Data jemaat</li>
+            </ol>
+        </div>
+    </div>
+    </div><!-- End Breadcrumbs -->
+    <br><br>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table" id="myTable">
+                <thead class="bg-light">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Jenis Kelamin</th>
+                        <th scope="col">Tempat Lahir</th>
+                        <th scope="col">Tanggal Lahir</th>
+                        <th scope="col">Status Baptis</th>
+                        <th scope="col">Alamat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $nomor = 1; ?>
+                    @foreach ($data as $row)
+                    <tr>
+                        <td><?= $nomor?></td>
+                        <td>{{ $row->nama }}</td>
+                        <td>{{ $row->jeniskelamin }}</td>
+                        <td>{{ $row->tempat }}</td>
+                        <td>{{ $row->tanggal }}</td>
+                        <td>{{ $row->baptis }}</td>
+                        <td>{{ $row->alamat }}</td>
+                    </tr>
+                    <?php $nomor++; ?>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+@endsection
+
 @push('js')
-<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 <script>
-  $(document).ready( function () {
-    $('#y').DataTable();
-} );
+$(document).ready(function() {
+    $('#myTable').DataTable();
+});
 </script>
 @endpush
-@push('css')
-<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
-@endpush
-
-@extends('layout.user')
-@section('content')
-
-<main id="main">
-
-         <!-- ======= Breadcrumbs ======= -->
-  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
-    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-      <h2>Data Jemaat</h2>
-      <ol>
-        <li><a href="/">Home</a></li>
-        <li>Data jemaat</li>
-
-      </ol>
-    </div>
-  </div>
-  </div><!-- End Breadcrumbs -->
-  <br><br>  
-  <div class="container">
-
-        <table class="table" id="y">
-            <thead class="bg-light">
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Jenis Kelamin</th>
-                    <th scope="col">Tempat Lahir</th>
-                    <th scope="col">Tanggal Lahir</th>
-                    <th scope="col">Status Baptis</th>
-                    <th scope="col">Alamat</th>
-                    
-                    
-                </tr>
-            </thead>
-            <tbody>
-                <?php $nomor=1 ?>
-                @foreach ($data as $row)
-                <tr>
-                    <td><?= $nomor?></td>
-                    {{-- <th scope="row">{{ $ }}</th> <!-- firstitem agar nomor terutut walau dipagination berbeda--> --}}
-                    <td>{{ $row->nama }}</td>
-                    <td>{{ $row->jeniskelamin }}</td>
-                    <td>{{ $row->tempat }}</td>
-                    <td>{{ $row->tanggal }}</td>
-                    <td>{{ $row->baptis }}</td>
-                    <td>{{ $row->alamat }}</td>
-                    {{-- <td>0{{ $row->notelpon }}</td> --}}
-                </tr>
-                
-            </tbody>  
-            <?php $nomor++ ?>   
-            @endforeach
-          </table>
-          {{-- {{ $data->links() }} --}}
-        </div>
-      </div>
-      
-    </div>
-  </main>
-  @endsection

@@ -19,7 +19,8 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
-    <h1 class="text-center mt-4"></h1>
+  <h1 class="text-center mb-4"style="font-family: 'Josefin Sans', sans-serif;">Tambah Warta Jemaat</h1>
+
     <br><br>
     <div class="container">
         <form method="POST" action="/insertwarta" enctype="multipart/form-data">

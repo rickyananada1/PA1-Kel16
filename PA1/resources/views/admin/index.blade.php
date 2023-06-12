@@ -46,12 +46,12 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
+        {{-- <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Home</a>
+        </li> --}}
+        {{-- <li class="nav-item d-none d-sm-inline-block">
+          <a href="https://api.whatsapp.com/send?phone=6281369284351" class="nav-link">Kirim Pesan Ke Developer</a>
+        </li> --}}
     </ul>
 
     <ul class="navbar-nav ml-auto">
@@ -61,6 +61,10 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{ route('logout') }}" class="nav-link">Logout</a>
+      </li>
+      </ul>
   </nav>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
@@ -70,12 +74,11 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{ asset('assets/img/gereja/logo.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
   
       <div class="info">
         <a href="#" class="d-block">ADMIN GPDI</a>
-        <a href="{{ route('logout') }}" class="d-block">Logout</a>
       </div>
       </div>
 
@@ -195,8 +198,7 @@
                 <i class="bi bi-calendar-date-fill"></i>
               </div>
               <h3>Jadwal Ibadah</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                tempore et consequatur.</p>
+              <p>Berisi Jadwal Ibadah GPDI PORSEA selama 1 bulan. Dan diupdate pada sabtu dan minggu. </p>
               <a href="/jadwalibadahh" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
@@ -208,8 +210,7 @@
                 <i class="bi bi-newspaper"></i>
               </div>
               <h3>Warta Jemaat</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                nesciunt dolorem.</p>
+              <p>Berisi warta jemaat yang akan diupdate setiap hari</p>
               <a href="/wartajemaatt" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
@@ -221,8 +222,7 @@
                 <i class="bi bi-person-vcard"></i>
               </div>
               <h3>Data Jemaat</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                eos earum corrupti.</p>
+              <p>Berisi semua data jemaat GPDI PORSEA yang sudah terdaftar didalam gereja.</p>
               <a href="/datajemaatt" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
@@ -234,8 +234,7 @@
                 <i class="bi bi-cash-coin"></i>
               </div>
               <h3>Informasi Keuangan</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                adipisci neque.</p>
+              <p>Informasi Keuangan gereja mulai dari pengeluaran , pemasukan , hingga Uang Kas gereja.</p>
               <a href="/keuangann" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
@@ -247,8 +246,7 @@
                 <i class="bi bi-gift"></i>
               </div>
               <h3>Data donasi</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
-                alias eius labore.</p>
+              <p> Pencatatan donasi dari setiap pemberi ke gereja dan akan dimasukkan ke kas gereja .</p>
               <a href="/donasii" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
@@ -260,8 +258,7 @@
                 <i class="bi bi-image"></i>
               </div>
               <h3>Galeri</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
-                recusandae ducimus enim.</p>
+              <p>Berisi photo photo gereja mulai dari photo lama sampai dengan photo terbaru ,sebagai kenang kenangan gereja.</p>
               <a href="/photoo" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
@@ -281,7 +278,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    <strong>Copyright &copy; 2023 GPDIPORSEA</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.2.0

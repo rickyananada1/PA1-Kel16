@@ -23,12 +23,12 @@
       </div><!-- /.container-fluid -->
     </div>
 
-    <h1 class="text-center mt-4">Tambah Photo</h1>
+    <h1 class="text-center mt-4"style="font-family: 'Josefin Sans', sans-serif;">Tambah Photo</h1>
     <div class="container">
         <form method="POST" action="/insertphoto" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-              <label for="nama">Keterangan</label>
+              <label for="nama">Judul</label>
               <input type="text" class="form-control" id="wkwkw" name="nama" />
           </div>
             <div class="form-group">

@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Data Jemaat</h1>
+            {{-- <h1 class="m-0">Data Jemaat</h1> --}}
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -20,7 +20,7 @@
     </div>
     
  
-  <h1 class="text-center mt-2">Edit  Jadwal Ibadah</h1>
+  <h1 class="text-center mt-2"style="font-family: 'Josefin Sans', sans-serif;">Edit  Jadwal Ibadah</h1>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
@@ -39,11 +39,15 @@
             </div>              
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Hari & Tanggal</label>
-              <input type="date" class="form-control" name="haritanggal" id="exampleInputPassword1">
+              <input type="date" class="form-control" name="haritanggal" value="{{ $data->haritanggal }}"id="exampleInputPassword1" >
             </div> 
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-              <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5">{{ $data->deskripsi }}</textarea>
+              <label for="exampleInputEmail1" class="form-label">Pelayan Ibadah</label>
+              <input type="text" class="form-control" name="pelayan" id="exampleInputEmail1" value="{{ $data->pelayan }}" aria-describedby="emailHelp">
+            </div> 
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Lokasi Ibadah</label>
+              <input type="text" class="form-control" name="lokasiibadah" id="exampleInputEmail1" value="{{ $data->lokasiibadah }}" aria-describedby="emailHelp">
             </div>
             
             <button type="submit" class="btn btn-primary">Submit</button>

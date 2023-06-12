@@ -19,7 +19,7 @@
         </div><!-- /.container-fluid -->
     </div>
 
-    <h1 class="text-center mt-4">Edit Warta Jemaat</h1>
+    <h1 class="text-center mt-4"style="font-family: 'Josefin Sans', sans-serif;">Edit Warta Jemaat</h1>
     <div class="container">
         <form method="POST" action="/updatewarta/{{ $data->id }}" enctype="multipart/form-data">
             @csrf
@@ -32,10 +32,14 @@
                 {{-- @error('judul')
                   <span class="text-danger" > {{ $message }}</span>                    
                 @enderror --}}
-
+          
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
                 <textarea class="form-control" name="keterangan" id="exampleFormControlTextarea1" style="height: 170px" rows="5">{{ $data->keterangan }} </textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Hari & Tanggal</label>
+                <input type="date" class="form-control" name="tanggal" value="{{ $data->tanggal }}" id="tanggal">
             </div>
             <div class="form-group">
               <label for="photo">Photo</label>

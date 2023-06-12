@@ -252,7 +252,7 @@ font-family:'Dosis', sans-serif;
       <div class="col-lg-6">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="assets/img/team/team-2.jpg" alt="..." />
-          <h4>Eka Lumbanraja</h4>
+          <h4>Pdt.Eben Sitorus</h4>
           <p class="text-muted">Pendeta</p>
           {{-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
           <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
@@ -262,7 +262,7 @@ font-family:'Dosis', sans-serif;
       <div class="col-lg-6">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="assets/img/team/team-1.jpg" alt="..." />
-          <h4>Indah cesia </h4>
+          <h4>Pdt.Kristien Oktavia</h4>
           <p class="text-muted">Pendeta</p>
           
         </div>
@@ -278,16 +278,16 @@ font-family:'Dosis', sans-serif;
       <div class="col-lg-6">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="assets/img/team/team-3.jpg" alt="..." />
-          <h4>Eka Lumbanraja</h4>
-          <p class="text-muted">Pendeta</p>
+          <h4>Sahata Siburian</h4>
+          <p class="text-muted">Sintua</p>
          
         </div>
       </div>
       <div class="col-lg-6">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="assets/img/team/team-4.jpg" alt="..." />
-          <h4>Indah cesia </h4>
-          <p class="text-muted">Pendeta</p>
+          <h4>Harapan Manurung </h4>
+          <p class="text-muted">Sintua</p>
          
         </div>
       </div>
@@ -296,119 +296,25 @@ font-family:'Dosis', sans-serif;
       <div class="col-lg-6">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="assets/img/team/team-5.jpg" alt="..." />
-          <h4>Eka Lumbanraja</h4>
-          <p class="text-muted">Pendeta</p>
-         
+          <h4>Panusunan simanjuntak</h4>
+          <p class="text-muted">Sintua</p>
+          
         </div>
       </div>
       <div class="col-lg-6">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="assets/img/team/team-6.jpg" alt="..." />
-          <h4>Indah cesia </h4>
-          <p class="text-muted">Pendeta</p>
-         
+          <h4>Lisson Panjaitan </h4>
+          <p class="text-muted">Sintua</p>
+        </div>
+          
         </div>
       </div>
     </div>
   </div>
-</div>
-
+  
 </section>
-    <!-- ======= Services Section ======= -->
-    {{-- <div id="datagereja">
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-        
-        <div class="section-heading">
-          <h2>Data <em>Gereja</em></h2>
-          <p>Berikut adalah yang dapat diihat oleh semua jemaat</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-date-fill"></i>
-              </div>
-              <h3>Jadwal Ibadah</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                tempore et consequatur.</p>
-              <a href="/datajemaatt" class="readmore stretched-link">Learn more <i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-newspaper"></i>
-              </div>
-              <h3>Warta Jemaat</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                nesciunt dolorem.</p>
-              <a href="/wartajemaatt" class="readmore stretched-link">Learn more <i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-person-vcard"></i>
-              </div>
-              <h3>Data Jemaat</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                eos earum corrupti.</p>
-              <a href="/datajemaatt" class="readmore stretched-link">Learn more <i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-cash-coin"></i>
-              </div>
-              <h3>Informasi Keuangan</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                adipisci neque.</p>
-              <a href="/keuangann" class="readmore stretched-link">Learn more <i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-gift"></i>
-              </div>
-              <h3>Data donasi</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
-                alias eius labore.</p>
-              <a href="/donasii" class="readmore stretched-link">Learn more <i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-image"></i>
-              </div>
-              <h3>Galeri</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
-                recusandae ducimus enim.</p>
-              <a href="/photoo" class="readmore stretched-link">Learn more <i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section --> --}}
-  </div>
+</div>
 
 
   <div id="contact">
@@ -429,6 +335,7 @@ font-family:'Dosis', sans-serif;
                   <div class="info-item  d-flex flex-column justify-content-center align-items-center">
                     <i class="bi bi-map"></i>
                     <h3>Alamat </h3>
+                    
                     <p>Jl. Gereja Ulu Bius No.102Parparean III, Kec. Porsea, Toba, br Sumatera Utara 22384</p>
                   </div>
                 </div><!-- End Info Item -->
@@ -445,7 +352,8 @@ font-family:'Dosis', sans-serif;
                   <div class="info-item  d-flex flex-column justify-content-center align-items-center">
                     <i class="bi bi-telephone"></i>
                     <h3>No-telpon</h3>
-                    <p>000000000000000</p>
+                    <a href="https://api.whatsapp.com/send?phone=6281396293306" class="nav-link">+62 813-9629-3306</a>
+
                   </div>
                 </div><!-- End Info Item -->
       

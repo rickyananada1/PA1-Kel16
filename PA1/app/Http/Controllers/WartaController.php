@@ -23,15 +23,15 @@ public function tambahwarta(){
 
     public function insertwarta(Request $request){
         $validated= $request->validate([
-            'judul' =>'required|unique:wartas|min:2',
-            'keterangan' =>'max:100',
+            'judul' =>'required|unique:wartas|max:30',
+            'keterangan' =>'max:200',
             'tanggal' =>'required',
             'photo' =>  'required|mimes:jpg,jpeg,png',
         ],
         [
             'judul.required' =>'Judul tidak boleh kosong',
-            'judul.min' => ' maksimal 20 karakter',
-            'keterangan.max'=> ' Keterangan maksimal 100 karakter',
+            'judul.max' => ' maksimal 20 karakter',
+            'keterangan.max'=> ' Keterangan maksimal 200 karakter',
             'photo.required' => 'Photo Tidak boleh Kosong', 
             'tanggal.required' => 'tanggal Tidak boleh Kosong', 
             'photo.mimes'=> 'Photo tidak dapat digunakan',    

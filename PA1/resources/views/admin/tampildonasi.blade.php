@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 @section('content')
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -53,8 +53,8 @@
               </div>
           </div>
       </div>
-  </div>
-</div>
+    </div>
+  
 @endsection
     
    

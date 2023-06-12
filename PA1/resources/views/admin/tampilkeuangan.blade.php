@@ -18,7 +18,7 @@
         </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
-    <h1 class="text-center mb-4">Edit data Keuangan</h1>
+    <h1 class="text-center mb-4"style="font-family: 'Josefin Sans', sans-serif;">Edit data Keuangan</h1>
     <div class="container">
         <div class="row justify-content-center">
             <div class="card">
@@ -28,12 +28,20 @@
                         @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Hari & tanggal</label>
-                            <input type="date" class="form-control" name="tanggal" id="exampleInputEmail1"  aria-describedby="emailHelp">
+                            <input type="date" class="form-control" name="tanggal" id="exampleInputEmail1" value="{{ $data->tanggal }}"  aria-describedby="emailHelp">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                            <input type="text" class="form-control" name="kategori" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          </div> 
+                     
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label">kategori</label>
+                            <select class="form-control select2" name="kategori" aria-label=".form-select-lg example">
+                              <option selected>{{ $data->kategori }} </option>
+                              <option value="1">Kas Gereja</option>
+                              <option value="2">Persembahan</option>
+                              <option value="3">Dana Sosial</option>
+                              <option value="4">Donasi</option>
+                              <option value="5">Lainnya</option>
+                            </select>
+                          </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Jumlah Pemasukan</label>
                             <input type="text" class="form-control" name="pemasukan" id="exampleInputEmail1" value="{{ $data->pemasukan }}" aria-describedby="emailHelp">
@@ -46,7 +54,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Keterangan</label>
-                            <textarea class="form-control" name="keterangan" id="exampleFormControlTextarea1" rows="5">{{ $data->deskripsi }}</textarea>
+                            <textarea class="form-control" name="keterangan" id="exampleFormControlTextarea1" rows="5">{{ $data->keterangan }}</textarea>
                         </div>
                         <div class="mb-3 form-check">
                         </div>

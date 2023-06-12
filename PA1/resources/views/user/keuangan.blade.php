@@ -9,18 +9,19 @@
 @push('cssss')
 <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
 <style>
-
-  th,td{
-    text-align: center;
+ table {
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
   }
 </style>
 
-
 @endpush
 @extends('layout.user')
-
 @section('content')
-
 
   <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assetsz/img/home/alkitab.jpg')">
@@ -28,17 +29,17 @@
 <h2>Keuangan</h2>
 <ol>
  <li><a href="/">Home</a></li>
- <li><a href="/jadwalibadahh">Keuangan</a></li>
+ <li>Keuangan</li>
 
 </ol>
 </div>
 </div>
 </div><!-- End Breadcrumbs -->
-<div class="container">
 
-<div class="row">   
+  <br>
       <!-- /.card-header -->
-        <table class="table table-striped">
+      <div style="overflow-x: auto">
+        <table class="table">
           <thead>
             <tr>
               {{-- <th scope="col">No</th> --}}
@@ -71,29 +72,24 @@
             <td>Rp.{{ number_format($pengeluaran ,0,',','.') }}</td>
             <td> Rp.{{ number_format($pemasukan ,0,',','.') }}</td>
             </tr>
-
-            {{--  <tr>
-              <td></td>
-           <th scope="row"> </th> 
-            <td></td>
-            <td  colspan="4" style="text-align: right">SALDO = {{ $saldo }}</td>
-            {{-- <td colspan="2"> {{ $saldo }} </td> 
-            </tr>--}}
-          </tbody>
-          <tfoot>
             <tr>
-              <td colspan="12" style="text-align: right">  Jumlah Total Uang kas &nbsp;&nbsp;&nbsp;&nbsp; Rp.{{ number_format($saldo,0,',','.') }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="text-align: right;" >TOTAL SALDO</td>
+            <td>Rp.{{ number_format($pengeluaran ,0,',','.') }}</td>
+            {{-- <td> Rp.{{ number_format($pemasukan ,0,',','.') }}</td> --}}
             </tr>
-          </tfoot>
+
+          </tbody>
+   
         </table>
-      <!-- /.card-body -->
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
     </div>
-    <!-- /.card -->
   </div>
 </div>
-</div>
-</div>
-
 
     
 @endsection

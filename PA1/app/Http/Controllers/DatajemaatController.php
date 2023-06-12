@@ -9,7 +9,7 @@ use App\Models\datajemaat;
 class DatajemaatController extends Controller
 {
     public function index(){
-        $data = datajemaat::all();
+        $data = datajemaat::paginate(10);
         return view('admin.datajemaat', compact('data'));
     }
     public function tambahjemaat(){ 

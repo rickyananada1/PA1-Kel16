@@ -18,17 +18,19 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
-  <h1 class="text-center mb-4" style="font-family: 'Rowdies', cursive;"> Data Donasi</h1>
+  <h1 class="text-center mb-4" style="font-family: 'Rowdies', cursive;">Data Donasi</h1>
 
-<div class="container">
-    <a href="/tambahdonasi" type="button" class="btn btn-success">Tambah +</a>
+  <div class="container">
     <div class="row">
+      <div class="col-12">
+        <a href="/tambahdonasi" type="button" class="btn btn-success">Tambah +</a>
         @if ($message = Session::get('success'))
-        <div class="alert alert-success" role="alert">
-        {{  $message }}
-        </div>  
-      @endif
-        <table class="table">
+          <div class="alert alert-success" role="alert">
+            {{ $message }}
+          </div>
+        @endif
+        <div class="table-responsive">
+          <table class="table">
             <thead>
               <tr>
                 <th scope="col">No</th>
@@ -40,56 +42,65 @@
               </tr>
             </thead>
             <tbody>
-                <?php $i=1?>
-                @foreach ($data as $row)
-                    
+              <?php $i = 1; ?>
+              @foreach ($data as $row)
                 <tr>
-                <th scope="row"><?= $i ?></th>
-                <td>{{ $row->tanggal->format('D d M Y')  }}</td>
-                <td>{{ $row->nama }}</td>
-                <td>{{ $row->jenis }}</td>
-                <td>{{ $row->jumlah }}</td>
-                <td>
-                    <a href="/tampilkandonasi/{{ $row->id }}" type="button" class="btn btn-warning">Edit</a>
-                    <a href="#" class="btn btn-danger delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
-                </td>
-                </tr>`
+                  <th scope="row"><?= $i ?></th>
+                  <td>{{ $row->tanggal->format('D d M Y') }}</td>
+                  <td>{{ $row->nama }}</td>
+                  <td>{{ $row->jenis }}</td>
+                  <td>{{ $row->jumlah }}</td>
+                  <td>
+                    <a href="/tampilkandonasi/{{ $row->id }}" type="button" class="btn btn-outline-warning waves-effect">Edit</a>
+                    <a href="#" class="btn btn-outline-danger waves-effect delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
+                  </td>
+                </tr>
+                <?php $i++ ?>
+              @endforeach
             </tbody>
-            <?php $i++ ?>
-        @endforeach
           </table>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 @endsection
    
-   @push('d')
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   <script>
-   $('.delete').click(function(){
-       var id = $(this).attr('id');
-       var nama = $(this).attr('nama');
-       Swal.fire({
-       title: 'Yakin?',
-       text: "Kamu akan menghapus data "+nama+"",
-       icon: 'warning',
-       showCancelButton: true,
-       confirmButtonColor: '#3085d6',
-       cancelButtonColor: '#d33',
-       confirmButtonText: 'Ya, hapus saja!'
-       }).then((result) => {
-       if (result.isConfirmed) {
-           window.location="/deletedonasi/"+id+""
-           Swal.fire(
-           'Dihapus!',
-           'Data sudah terhapus',
-           'success'
-           )
-       }
-       })
-   })
-   
-   </script>
-   @endpush    
-  
+@push('d')
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+<script>
+$('.delete').click(function(){
+  var id = $(this).attr('id');
+  var nama = $(this).attr('nama');
+  Swal.fire({
+    title: 'Yakin?',
+    text: "Kamu akan menghapus data tersebut?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Ya, hapus saja!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location="/deletedonasi/"+id+""
+      Swal.fire(
+        'Dihapus!',
+        'Data sudah terhapus',
+        'success'
+      )
+    }
+  })
+})
+</script>
+@endpush    
+
+@push('ya')
+<style>
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+    
+@endpush

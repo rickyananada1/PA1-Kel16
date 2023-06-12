@@ -2,7 +2,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <link rel="icon shortcut" type="image/jpg" href="img/logo/logo.png" style="width: 50px" />
+    <link rel="icon shortcut" type="image/jpg" href="assets/img/cross.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="assetsz/fonts/flaticon.css" />
     <link rel="stylesheet" href="assetsz/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="assetsz/css/baguetteBox.min.css" />
-    <link rel="stylesheet" href="assetsz/mdb.min.css" />
+    {{-- <link rel="stylesheet" href="assetsz/css/mdb.min.css" /> --}}
     <link rel="stylesheet" href="assetsz/css/glightbox.min.css">
   <link href="assets/css/main.css" rel="stylesheet">
 
     <link rel="stylesheet" href="assetsz/css/baguetteBox.min.css">
     @stack('css')
     @stack('csss')
+    @stack('jadwalibadah')
     @stack('cssss')
 
 

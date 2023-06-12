@@ -22,9 +22,6 @@ use App\Models\datajemaat;
 */
 
 
-Route::get('/2', function () {
-    return view('welcome');
-});
 
 
 Route::get('/', function () {
@@ -44,7 +41,7 @@ Route::get('/dashboard', function () {
     return view('admin.index',compact('jumlahjemaat'));
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/logout',[PhotoController::class,'perform'])->name('logout');
+Route::get('/logout',[GaleriController::class,'perform'])->name('logout');
 
  
 Route::get('/jadwalibadahh',[JadwalibadahController::class ,'indexx'])->name('jadwalibadahh');

@@ -43,48 +43,44 @@
             {{ $message }}
           </div>
         @endif
-                {{-- <table id="example2" class="table table-bordered table-hover"> --}}
-                  <table class="table">
+        <div class="table-responsive">
+          <table class="table">
             <thead>
-            <tr>
-                <th >No</th>
-                <th >Nama</th>
-                <th >Jenis Kelamin</th>
-                <th >Tempat Lahir</th>
+              <tr>
+                <th style="align-items: center" >No</th>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+                <th>Tempat Lahir</th>
                 <th>Tanggal Lahir</th>
                 <th>Status Baptis</th>
-                <th >Alamat</th>
-                <th >No Telepon</th>
-                {{-- <th >Bapti</th>
-                <th scope="col">Dibuat pada </th> --}}
+                <th>Alamat</th>
+                <th>No Telepon</th>
                 <th>Aksi</th>
-            </tr>
+              </tr>
             </thead>
             <tbody>
-                <?php $nomor=1 ?>
-                @foreach ($data as $index=>$row)
-                    
-                    <tr>
-                        <th scope="row"><?=$nomor ?></th> <!-- firstitem agar nomor terutut walau dipagination berbeda-->
-                        <td>{{ $row->nama }}</td>
-                        <td>{{ $row->jeniskelamin }}</td>
-                        <td>{{ $row->tempat }}</td>
-                        <td>{{ $row->tanggal }}</td>
-                        <td>{{ $row->baptis }}</td>
-                        <td>{{ $row->alamat }}</td>
-                        <td>0{{ $row->notelpon }}</td>
-                        {{-- <td> {{ $row->created_at }} </td> --}}
-                        <td>
-                            <a href="/tampilkandata/{{ $row->id }}" class="btn btn-outline-warning waves-effect">Edit</a>
-                            <a href="#" class="btn btn-outline-danger waves-effect delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
-                        </td>
-                    </tr>
-                </tbody>
-                <?php $nomor++ ?>   
-            
-            @endforeach
-        </table>
-        {{-- {{ $data->links() }} --}}
+              <?php $nomor=1 ?>
+              @foreach ($data as $index=>$row)
+                <tr>
+                  <th scope="row">{{ $index + $data->firstitem() }}</th> <!-- firstitem agar nomor terurut walau dipagination berbeda-->
+                  <td>{{ $row->nama }}</td>
+                  <td>{{ $row->jeniskelamin }}</td>
+                  <td>{{ $row->tempat }}</td>
+                  <td>{{ $row->tanggal }}</td>
+                  <td>{{ $row->baptis }}</td>
+                  <td>{{ $row->alamat }}</td>
+                  <td>0{{ $row->notelpon }}</td>
+                  <td>
+                    <a href="/tampilkandata/{{ $row->id }}" class="btn btn-outline-warning waves-effect">Edit</a>
+                    <a href="#" class="btn btn-outline-danger waves-effect delete" nama="{{ $row->nama }}" id="{{ $row->id }}">Delete</a>
+                  </td>
+                </tr>
+              <?php $nomor++ ?>   
+              @endforeach
+            </tbody>
+          </table>
+          {{ $data->links() }}  
+        </div>
         <!-- Optional JavaScript; choose one of the two! -->
     </div>
 
@@ -135,4 +131,11 @@
   });
 </script>
     
+@endpush
+@push('ye')
+    <style>
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
 @endpush
