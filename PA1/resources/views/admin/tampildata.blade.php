@@ -19,7 +19,7 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-  <h1 class="text-center mb-4">Edit Data Jemaat</h1>
+  <h1 class="text-center mb-4"style="font-family: 'Josefin Sans', sans-serif;">Edit Data Jemaat</h1>
   <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">

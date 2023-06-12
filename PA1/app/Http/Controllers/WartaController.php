@@ -67,7 +67,7 @@ public function tambahwarta(){
         $validated= $request->validate([
             'judul' =>'required|min:4',
             'keterangan' =>'required|max:255',
-        ],
+        ], 
         [
             'judul.required' =>'Judul tidak boleh kosong',
             'judul.min' => ' maksimal 4 karakter',
@@ -88,7 +88,7 @@ public function tambahwarta(){
             $image = $lokasi.$img_name;
             $photo->move($lokasi,$img_name);
             
-            unlink($photolama);
+            unlink($photolama); 
             warta::find($id)->update([
             'judul' =>  $request->judul,
             'keterangan' => $request->keterangan,

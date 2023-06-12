@@ -21,7 +21,7 @@ use App\Models\datajemaat;
 |
 */
 
-
+ 
 
 
 Route::get('/', function () {

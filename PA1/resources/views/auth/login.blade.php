@@ -288,6 +288,7 @@
                   <span class="input-icon"><i class="fa fa-lock"></i></span>
                   <input class="form-control" type="password"name="password"  :value="__('Password')" placeholder="Password" />
                 </div>
+              
                 <a href="/" class="btn signin">Back</a>
 
                 <button class="btn signin">Log in</button>

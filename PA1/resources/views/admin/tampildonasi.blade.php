@@ -20,7 +20,7 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
-  <h1 class="text-center mt-4 ">Edit data donasi</h1>
+  <h1 class="text-center mt-4"style="font-family: 'Josefin Sans', sans-serif;">Edit data donasi</h1>
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-8">

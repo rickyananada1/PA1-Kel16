@@ -23,7 +23,6 @@ class DatajemaatController extends Controller
         [
             'notelpon.max' => 'Nomor maximal 13 angka',
         ]);
-
         //dd($request->all());
         datajemaat::create($request->all());
         return redirect()->route('datajemaat')->with('success','Data Berhasil ditambahkan'); 
