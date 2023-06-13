@@ -142,7 +142,7 @@ font-family:'Dosis', sans-serif;
         <section id="about" class="about">
           <div class="container" data-aos="fade-up">
             <div class="row position-relative">
-              <div class="col-lg-7 about-img" style="background-image: url(assetsz/img/slider/bg_1.jpg"></div>
+              <div class="col-lg-7 about-img" style="background-image: url(assets/img/hero-carousel/gereja.jpg)"></div>
               <div class="col-lg-7">
               
                 <div class="our-story">
