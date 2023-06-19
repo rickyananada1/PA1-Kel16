@@ -41,9 +41,9 @@
                     </thead>
                     <?php $i = 1 ?>
                     <tbody>
-                        @foreach ($data as $row)
+                        @foreach ($data as $index=>$row)
                         <tr>
-                            <th scope="row"><?= $i ?> </th>
+                            <th scope="row">{{ $index + $data->firstitem() }}</th> <!-- firstitem agar nomor terurut walau dipagination berbeda-->
                             <td>{{ $row->judul }}</td>
                             <td>
                                 <a href="{{ $row->photo }}">

@@ -39,7 +39,7 @@
             </div>              
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Hari & Tanggal</label>
-              <input type="date" class="form-control" name="haritanggal" value="{{ $data->haritanggal }}"id="exampleInputPassword1" >
+              <input type="date" class="form-control" name="haritanggal" value="{{ $data->haritanggal }}" id="exampleInputPassword1" >
             </div> 
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Pelayan Ibadah</label>

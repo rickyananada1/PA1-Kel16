@@ -33,7 +33,7 @@
                 <h3 class="post-title">{{ $row->judul }}</h3>
                 <p>{{ $row->keterangan }}</p>
                 <hr>
-                <a href="#" class="moredetails"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#" class="moredetails"><span>Lihat lebih jelas</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End post list item -->

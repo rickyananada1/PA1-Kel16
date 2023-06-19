@@ -37,6 +37,7 @@
 </div><!-- End Breadcrumbs -->
 
   <br>
+    <div class="container">
       <!-- /.card-header -->
       <div style="overflow-x: auto">
         <table class="table">
@@ -82,14 +83,15 @@
             </tr>
 
           </tbody>
-   
+          
         </table>
+      </div>
         <!-- /.card-body -->
       </div>
       <!-- /.card -->
     </div>
   </div>
+  
 </div>
-
     
 @endsection

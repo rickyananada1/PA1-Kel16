@@ -45,9 +45,10 @@
           </thead>
           <tbody>
             <?php $i = 1 ?>
-            @foreach($data as $row)
+            @foreach($data as $index => $row) 
             <tr>
-              <th scope="row"><?= $i ?></th>
+              <th scope="row">{{ $index + $data->firstitem() }}</th> <!-- firstitem agar nomor terurut walau dipagination berbeda-->
+
               <td>{{ $row->namaibadah }}</td>
               <td>{{ $row->ayatalkitab }}</td>
               <td>{{ $row->haritanggal->format('D d M Y') }}</td>
@@ -64,6 +65,8 @@
             @endforeach
           </tbody>
         </table>
+        {{ $data->links() }}  
+
       </div>
     </div>
   </div>

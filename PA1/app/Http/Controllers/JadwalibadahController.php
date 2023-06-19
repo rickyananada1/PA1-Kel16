@@ -8,7 +8,7 @@ use App\Models\jadwalibadah;
 class JadwalibadahController extends Controller
 {
     public function index(){
-        $data= jadwalibadah::all();
+        $data= jadwalibadah::paginate(10);
         return view('admin.jadwalibadah',compact('data'));
     }
     public function tambahjadwal(){
