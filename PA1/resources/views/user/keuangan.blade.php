@@ -60,8 +60,19 @@
             {{-- <th scope="row"> </th> --}}
             <td >{{ $row->kategori }}</td>
             <td> <p> {!! nl2br(e($row->keterangan)) !!}</p>  
-              <td >Rp.{{ number_format($row->pemasukan,0,',','.') }}</td>
-              <td>Rp.{{ number_format($row->pengeluaran,0,',','.') }}</td>
+            <td>
+                @if ($row->pemasukan == 0)
+                    -
+                @else
+                    Rp.{{ number_format($row->pemasukan, 0, ',', '.') }}
+                @endif
+            </td>
+            <td>
+                @if ($row->pengeluaran == 0)
+                  -
+                @else
+                Rp.{{ number_format($row->pengeluaran,0,',','.') }}
+                @endif
             </td>
             </tr>
             @endforeach
@@ -78,7 +89,7 @@
             <td></td>
             <td></td>
             <td style="text-align: right;" >TOTAL SALDO</td>
-            <td>Rp.{{ number_format($pengeluaran ,0,',','.') }}</td>
+            <td>Rp.{{ number_format($saldo ,0,',','.') }}</td>
             {{-- <td> Rp.{{ number_format($pemasukan ,0,',','.') }}</td> --}}
             </tr>
 

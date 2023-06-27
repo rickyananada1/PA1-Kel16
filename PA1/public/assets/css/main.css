@@ -2593,8 +2593,8 @@ section {
 
 .section-heading {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-family: "Poppins", sans-serif;
     font-family: "Lora", serif;
     padding-top: 15px;

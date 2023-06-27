@@ -30,8 +30,11 @@
                         @csrf
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Tanggal</label>
-                          <input type="date" class="form-control" id="exampleInputEmail1"  name="tanggal" aria-describedby="emailHelp">
-                  
+                          <input type="date" class="form-control" id="exampleInputEmail1"  name="tanggal" value="{{ $data->tanggal }}" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Hari & Tanggal</label>
+                          <input type="date" class="form-control" name="tanggal" value="{{ $data->tanggal }}" id="tanggal">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Jenis Donasi</label>
